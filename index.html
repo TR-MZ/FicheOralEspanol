@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fiches d'analyse</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="chapter-rail" aria-label="Chapitres">
+        <a class="brand" href="#home" aria-label="Retour aux chapitres">
+          <span>
+            <strong>Fiches - Espagnol</strong>
+            <small>Documents & analyses</small>
+          </span>
+        </a>
+
+        <div class="rail-section">
+          <p class="eyebrow">Chapitres</p>
+          <nav id="chapterNav" class="chapter-nav"></nav>
+        </div>
+      </aside>
+
+      <main class="reader">
+        <header class="topbar">
+          <button id="homeButton" class="ghost-button" type="button">Chapitres</button>
+          <div class="topbar-status" id="statusText">Selectionne un chapitre</div>
+        </header>
+
+        <section id="chapterView" class="view"></section>
+        <section id="documentView" class="view hidden"></section>
+      </main>
+    </div>
+
+    <div id="imageLightbox" class="image-lightbox hidden" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Fermer l'image">×</button>
+      <img id="lightboxImage" alt="" />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
