@@ -342,6 +342,7 @@ let flashcardUnknown = 0;
 let flashcardPointerId = null;
 let flashcardPointerStartX = 0;
 let flashcardPointerDeltaX = 0;
+const flashcardsStorageKey = "imagesespaniol.flashcards.v1";
 
 const scanDetails = {
   "enigma palabra agur - 1.jpg": {
@@ -595,6 +596,79 @@ function shuffle(items) {
   return copy;
 }
 
+function canUseLocalStorage() {
+  try {
+    return typeof window !== "undefined" && typeof window.localStorage !== "undefined";
+  } catch (error) {
+    return false;
+  }
+}
+
+function readFlashcardsCache() {
+  if (!canUseLocalStorage()) return null;
+
+  try {
+    const raw = window.localStorage.getItem(flashcardsStorageKey);
+    if (!raw) return null;
+    return JSON.parse(raw);
+  } catch (error) {
+    return null;
+  }
+}
+
+function writeFlashcardsCache() {
+  if (!canUseLocalStorage()) return;
+
+  try {
+    window.localStorage.setItem(
+      flashcardsStorageKey,
+      JSON.stringify({
+        cards: flashcards.map((card) => card.id),
+        index: flashcardIndex,
+        flipped: flashcardFlipped,
+        known: flashcardKnown,
+        unknown: flashcardUnknown,
+      }),
+    );
+  } catch (error) {
+    // Ignore storage failures so flashcards still work normally.
+  }
+}
+
+function clearFlashcardsCache() {
+  if (!canUseLocalStorage()) return;
+
+  try {
+    window.localStorage.removeItem(flashcardsStorageKey);
+  } catch (error) {
+    // Ignore storage failures so flashcards still work normally.
+  }
+}
+
+function restoreFlashcardsFromCache(deck) {
+  const cached = readFlashcardsCache();
+  if (!cached || !Array.isArray(cached.cards)) return false;
+
+  const deckById = new Map(deck.map((card) => [card.id, card]));
+  const restoredCards = [];
+
+  for (const cardId of cached.cards) {
+    const card = deckById.get(cardId);
+    if (!card) return false;
+    restoredCards.push(card);
+    deckById.delete(cardId);
+  }
+
+  if (restoredCards.length !== deck.length) return false;
+
+  flashcards = restoredCards;
+  flashcardIndex = Math.max(0, Math.min(Number(cached.index) || 0, flashcards.length));
+  flashcardFlipped = Boolean(cached.flipped) && flashcardIndex < flashcards.length;
+  flashcardKnown = Math.max(0, Number(cached.known) || 0);
+  flashcardUnknown = Math.max(0, Number(cached.unknown) || 0);
+  return true;
+}
+
 function buildVocabularyDeck() {
   const entries = [];
   const seen = new Set();
@@ -628,11 +702,15 @@ function buildVocabularyDeck() {
 
 function ensureFlashcards() {
   if (flashcards.length) return;
-  flashcards = shuffle(buildVocabularyDeck());
+  const deck = buildVocabularyDeck();
+  if (restoreFlashcardsFromCache(deck)) return;
+
+  flashcards = shuffle(deck);
   flashcardIndex = 0;
   flashcardFlipped = false;
   flashcardKnown = 0;
   flashcardUnknown = 0;
+  writeFlashcardsCache();
 }
 
 function resetFlashcards() {
@@ -641,6 +719,7 @@ function resetFlashcards() {
   flashcardFlipped = false;
   flashcardKnown = 0;
   flashcardUnknown = 0;
+  writeFlashcardsCache();
 }
 
 function currentFlashcard() {
@@ -661,6 +740,7 @@ function classifyFlashcard(direction) {
 
   flashcardIndex += 1;
   flashcardFlipped = false;
+  writeFlashcardsCache();
 }
 
 function renderVocabulary(items = []) {
@@ -1177,6 +1257,7 @@ document.addEventListener("click", (event) => {
 
   if (event.target.closest("[data-flashcard]")) {
     flashcardFlipped = !flashcardFlipped;
+    writeFlashcardsCache();
     const cardEl = document.querySelector("[data-flashcard]");
     if (cardEl) cardEl.classList.toggle("is-flipped", flashcardFlipped);
     return;
@@ -1216,6 +1297,7 @@ document.addEventListener("keydown", (event) => {
       event.preventDefault();
       if (currentFlashcard()) {
         flashcardFlipped = !flashcardFlipped;
+        writeFlashcardsCache();
         const cardEl = document.querySelector("[data-flashcard]");
         if (cardEl) cardEl.classList.toggle("is-flipped", flashcardFlipped);
       }
