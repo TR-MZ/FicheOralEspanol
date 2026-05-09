@@ -249,6 +249,251 @@ h1 {
   gap: 12px;
 }
 
+.home-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.feature-card {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(252, 250, 244, 0.95));
+  color: var(--ink);
+  text-align: left;
+  box-shadow: var(--shadow);
+}
+
+.feature-card:hover {
+  border-color: #c9c0b1;
+  transform: translateY(-1px);
+}
+
+.feature-card h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.08;
+}
+
+.feature-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.cta-line {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.flashcards-shell {
+  display: grid;
+  gap: 18px;
+}
+
+.flashcards-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: end;
+}
+
+.flashcards-tools,
+.flashcards-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.flashcards-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.flashcards-stats .note-box p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.flashcards-progress {
+  overflow: hidden;
+  height: 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.flashcards-progress-bar {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #c44835, #d49d35);
+  transition: width 220ms ease;
+}
+
+.flashcard-stage {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr) 100px;
+  gap: 16px;
+  align-items: center;
+  perspective: 1200px;
+}
+
+.swipe-hint {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.swipe-hint-left {
+  text-align: right;
+}
+
+.flashcard {
+  position: relative;
+  min-height: 380px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 180ms ease;
+  will-change: transform;
+  touch-action: pan-y;
+}
+
+.flashcard:hover .flashcard-face {
+  box-shadow: 0 20px 40px rgba(32, 28, 20, 0.12);
+}
+
+.flashcard::before {
+  content: "";
+  position: absolute;
+  inset: -12px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top, rgba(180, 33, 33, 0.08), transparent 55%),
+    radial-gradient(circle at bottom, rgba(107, 115, 88, 0.09), transparent 58%);
+  z-index: 0;
+}
+
+.flashcard[data-swipe-direction="left"]::before {
+  background:
+    radial-gradient(circle at left, rgba(180, 33, 33, 0.16), transparent 52%),
+    radial-gradient(circle at bottom, rgba(180, 33, 33, 0.08), transparent 58%);
+}
+
+.flashcard[data-swipe-direction="right"]::before {
+  background:
+    radial-gradient(circle at right, rgba(95, 144, 92, 0.18), transparent 52%),
+    radial-gradient(circle at bottom, rgba(107, 115, 88, 0.1), transparent 58%);
+}
+
+.flashcard-face {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: grid;
+  align-content: center;
+  gap: 12px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 243, 236, 0.98));
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  box-shadow: var(--shadow);
+  transition: box-shadow 180ms ease;
+}
+
+.flashcard-front {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+}
+
+.flashcard-back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.flashcard.is-flipped {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.flashcard-label {
+  margin: 0;
+  color: var(--olive);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.flashcard h2 {
+  margin: 0;
+  font-size: clamp(28px, 5vw, 50px);
+  line-height: 1;
+}
+
+.flashcard-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.flashcard-click-hint {
+  margin: auto 0 0;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.flashcards-nope {
+  background: #fff5f3;
+}
+
+.flashcards-know {
+  background: #f6fbf2;
+}
+
+.swipe-out-left {
+  animation: swipeOutLeft 180ms ease forwards;
+}
+
+.swipe-out-right {
+  animation: swipeOutRight 180ms ease forwards;
+}
+
+.flashcards-finished {
+  display: grid;
+  gap: 14px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.flashcards-finished h2,
+.flashcards-finished p {
+  margin: 0;
+}
+
 .chapter-card {
   min-height: 190px;
   padding: 18px;
@@ -703,6 +948,28 @@ h1 {
   font-size: 12px;
 }
 
+@keyframes swipeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-180px) rotate(-18deg);
+  }
+}
+
+@keyframes swipeOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(180px) rotate(18deg);
+  }
+}
+
 @media (max-width: 880px) {
   .app-shell {
     grid-template-columns: 1fr;
@@ -739,9 +1006,23 @@ h1 {
   }
 
   .chapter-header,
+  .flashcards-hero,
   .study-grid,
   .reader-grid {
     grid-template-columns: 1fr;
+  }
+
+  .flashcards-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .flashcard-stage {
+    grid-template-columns: 1fr;
+  }
+
+  .swipe-hint-left,
+  .swipe-hint-right {
+    text-align: center;
   }
 
   .side-notes,
@@ -756,6 +1037,7 @@ h1 {
   }
 
   .chapter-tools,
+  .flashcards-tools,
   .doc-nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -764,4 +1046,159 @@ h1 {
   .nav-button {
     width: 100%;
   }
+
+  .flashcards-actions {
+    display: flex;
+    gap: 16px;
+  }
+
+  .flashcards-actions .nav-button {
+    flex: 1;
+    padding: 24px 16px;
+    font-size: 0;
+    line-height: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flashcards-nope::before {
+    content: "✕";
+    font-size: 24px;
+    line-height: 1;
+    color: var(--accent);
+  }
+
+  .flashcards-know::before {
+    content: "✓";
+    font-size: 24px;
+    line-height: 1;
+    color: var(--olive);
+  }
+
+  .flashcard {
+    min-height: 320px;
+  }
+
+  .flashcard-face {
+    padding: 22px;
+  }
+}
+
+.repassos-grid {
+  align-items: start;
+}
+
+.repassos-card {
+  display: grid;
+  gap: 8px;
+  text-align: left;
+}
+
+.repassos-card summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.repassos-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.repassos-summary {
+  display: grid;
+  gap: 6px;
+}
+
+.repassos-details {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.repassos-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.repassos-links > span {
+  color: var(--olive);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.repassos-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fbfaf7;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.repassos-link:hover {
+  border-color: #c9c0b1;
+  background: #fffdf9;
+}
+
+.repassos-details ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.repassos-text {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: var(--font-text);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.repassos-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.repasso-section {
+  display: grid;
+  gap: 12px;
+}
+
+.linked-repassos-list {
+  display: grid;
+  gap: 8px;
+}
+
+.linked-repasso-card {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fbfaf7;
+}
+
+.linked-repasso-card summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+
+.linked-repasso-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.linked-repasso-card .repassos-text {
+  margin-top: 12px;
 }

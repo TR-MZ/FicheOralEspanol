@@ -213,15 +213,135 @@ const chapters = [
 const chapterNav = document.querySelector("#chapterNav");
 const chapterView = document.querySelector("#chapterView");
 const documentView = document.querySelector("#documentView");
+const repassosView = document.querySelector("#repassosView");
 const statusText = document.querySelector("#statusText");
 const homeButton = document.querySelector("#homeButton");
 const imageLightbox = document.querySelector("#imageLightbox");
 const lightboxImage = document.querySelector("#lightboxImage");
 
+// === NOUVELLES DONNÉES : QUESTIONS DE L'ORAL ===
+const oralQuestions = [
+  { chapterId: "ficciones", docId: "otra-mirada", question: "¿una serie histórica que te haya gustado en particular?", keyPoints: ["Mencionar 'La otra mirada' o 'Las chicas del cable'.", "Hablar de la representación de la sociedad.", "Destacar el contexto histórico y la evolución de mentalidades."] },
+  { chapterId: "familia", docId: "ley-familia", question: "¿qué sabes de la ley de solo sí es sí?", keyPoints: ["Es una ley sobre la libertad sexual en España.", "Pone el consentimiento en el centro de las relaciones.", "Ha generado debate político y social sobre la protección a las víctimas."] },
+  { chapterId: "imagen-significados", docId: "afichas", question: "En general, ¿te gustan los biopics?", keyPoints: ["Permiten descubrir figuras históricas reales.", "Pueden ser más emocionantes al ser historias verídicas.", "Un riesgo es la manipulación de la imagen del protagonista."] },
+  { chapterId: "mundo-mejor", docId: "maquinas-atlecfrio", question: "¿hay una innovación científica que te parezca especialmente relevante?", keyPoints: ["Máquinas de Atlecfrio (para enfriar rápido).", "Innovaciones para ahorrar y recolectar agua.", "Permiten un desarrollo más sostenible."] },
+  { chapterId: "mundo-mejor", docId: "balance-aemet", question: "¿qué sabes del clima en España?", keyPoints: ["Sufre sequías severas por el cambio climático.", "Los embalses bajan críticamente.", "Importancia del agua y balances de AEMET."] },
+  { chapterId: "mundo-mejor", docId: "inventos", question: "En clase vimos inventos para recolectar agua. ¿Cuál es más sostenible?", keyPoints: ["Depende del consumo energético del invento.", "Las redes que atrapan la humedad del aire (niebla).", "Requiere menos infraestructura invasiva."] },
+  { chapterId: "mundo-mejor", docId: "balance-aemet", question: "Si pudieras volver en el pasado, ¿qué cambiarías?", keyPoints: ["Mejoraría la prevención del cambio climático.", "Cambiaría ciertas dinámicas de desigualdad social."] },
+  { chapterId: "imagen-significados", docId: "refran", question: "¿qué te ha gustado de la exposición 'los esplendores del barroco'?", keyPoints: ["El contraste entre luces y sombras (claroscuro).", "La propaganda religiosa y el poder de la imagen.", "La riqueza de detalles en la pintura."] },
+  { chapterId: "langues", docId: "caricatura-pedro-sanchez", question: "¿qué sabes de la pluralidad lingüística de España?", keyPoints: ["Castellano es oficial, pero hay lenguas cooficiales (catalán, gallego, euskera).", "Es una riqueza cultural y de identidad.", "A veces genera tensiones en instituciones como el Congreso."] },
+  { chapterId: "langues", docId: "citas-lenguas", question: "¿es importante aprender la lengua del país en el que estás?", keyPoints: ["Facilita la integración e intercambios.", "Muestra respeto hacia la cultura local.", "Ayuda en el entorno laboral y social."] },
+  { chapterId: "ficciones", docId: "otra-mirada", question: "¿te gustan las series históricas?", keyPoints: ["Sí, combinan entretenimiento y educación.", "Ayudan a trabajar la memoria de un territorio."] },
+  { chapterId: "ficciones", docId: "otra-mirada", question: "¿puedes presentar 'La otra mirada'? ¿es realmente histórica?", keyPoints: ["Se ambienta en una escuela en la Sevilla de los años 20.", "Muestra el inicio del feminismo y los roles de género.", "Es ficción pero trata temáticas reales de la época."] },
+  { chapterId: "imagen-significados", docId: "chavismo-ia", question: "En cuanto a la IA, ¿Cómo utilizarla de forma razonable?", keyPoints: ["Para tareas mecánicas o investigación, no para engañar.", "Verificar siempre que no se usurpe la identidad.", "Tener ética en el desarrollo y la educación digital."] },
+  { chapterId: "mundo-mejor", docId: "rios-tajo", question: "¿por qué España tendría que cuidar de sus reservas de agua?", keyPoints: ["Por la sequía recurrente, como indica la AEMET.", "Es un recurso vital para la agricultura y el turismo.", "Conflictos como el desvío del río Tajo."] },
+  { chapterId: "mundo-mejor", docId: "redes-menores", question: "¿te parece normal que España prohíba redes sociales a menores de 16?", keyPoints: ["Sí, para protegerlos de manipulación y problemas de salud mental.", "Fomenta responsabilidades, aunque limita una herramienta de su generación.", "La protección en mundos virtuales es una prioridad."] },
+  { chapterId: "langues", docId: "agur", question: "¿te acuerdas de la palabra 'Agur'? ¿te parece potente?", keyPoints: ["Es del euskera y significa adiós.", "Muestra cómo una palabra refleja toda una identidad.", "Permanece en el uso cotidiano de muchos hablantes."] },
+  { chapterId: "ficciones", docId: "otra-mirada", question: "¿qué formato prefieres: película, serie, cortometraje, libro?", keyPoints: ["La serie permite desarrollar más los personajes.", "El libro da más libertad a la imaginación.", "El corto es impactante y va al grano."] },
+  { chapterId: "mundo-mejor", docId: "inventos", question: "¿Cómo podríamos reducir dependencia a la electricidad?", keyPoints: ["Consumiendo menos energía superficial.", "Utilizando luz natural (ahorro de energía).", "Desarrollo sostenible con energías renovables locales."] },
+  { chapterId: "mundo-mejor", docId: "redes-menores", question: "¿estás a favor del uso de la IA por los jóvenes?", keyPoints: ["Con educación y límites de edad.", "Mejora del aprendizaje frente a la amenaza de la desinformación.", "Ayuda a la creación pero con consciencia humana."] },
+  { chapterId: "imagen-significados", docId: "refran", question: "¿qué opinas de la cita 'una imagen vale más que mil palabras'?", keyPoints: ["La imagen transmite emociones inmediatas.", "Muy usada en campañas políticas y propaganda.", "Puede ser engañosa si está sacada de contexto."] },
+  { chapterId: "langues", docId: "caricatura-pedro-sanchez", question: "Si fueras español, ¿defenderías el plurilingüismo institucional?", keyPoints: ["Sí, porque la lengua es parte clave de la identidad.", "Las instituciones deben representar a todos los ciudadanos.", "Aumenta la riqueza y respeto cultural."] },
+  { chapterId: "familia", docId: "no-do", question: "¿qué era el NO-DO? ¿qué transmitía?", keyPoints: ["Noticiarios oficiales de la dictadura franquista.", "Transmitía propaganda estatal en los cines.", "Imponía valores tradicionales (privado/público) y controlaba la narrativa."] },
+  { chapterId: "imagen-significados", docId: "chavismo-ia", question: "¿qué opinas de usar la IA para crear obras de arte?", keyPoints: ["Abre nuevas fronteras creativas para todos.", "Pierde la huella 'humana' y el sentimiento genuino.", "Plantea problemas de derechos de autor con artistas reales."] },
+  { chapterId: "ficciones", docId: "pamplona", question: "¿te parece que la ficción es útil para tratar temas sensibles?", keyPoints: ["Ayuda a la empatía del espectador (ej. violencia machista).", "Aporta distancia crítica sobre temas actuales.", "Permite denunciar sin atacar directly a una persona."] },
+  { chapterId: "ficciones", docId: "otra-mirada", question: "Entre 'la otra mirada' y 'marco', ¿Cuál aconsejarías?", keyPoints: ["La otra mirada: Para aprender sobre feminismo y la Sevilla clásica.", "Marco: Para reflexionar sobre la verdad, la mentira y la memoria histórica."] },
+  { chapterId: "imagen-significados", docId: "afichas", question: "¿Cómo los políticos utilizan la imagen para hacer pasar un mensaje?", keyPoints: ["Utilizan afiches, eslóganes y colores.", "Buscan persuasión emocional más que argumentos lógicos.", "Proponen un 'personaje' confiable o autoritario."] },
+  { chapterId: "familia", docId: "conciliacion-hombres", question: "¿Qué podría hacer el estado para impulsar la natalidad?", keyPoints: ["Mejorar las ayudas económicas.", "Ampliar permisos de paternidad/maternidad (conciliación).", "Reducir la presión laboral y dar facilidades de vivienda."] },
+  { chapterId: "familia", docId: "yanomamis-wayuus", question: "¿podrías presentar el modo de vida de una tribu indígena?", keyPoints: ["Yanomamis o Wayuus: viven en conexión profunda con el territorio.", "La familia tiene redes más comunitarias y extensas.", "Sufren amenazas de explotación moderna."] },
+  { chapterId: "familia", docId: "permiso-paternidad", question: "¿si pudieras beneficiarte de medidas de conciliación, lo harías?", keyPoints: ["Sí, para equilibrar mi vida laboral y personal.", "Fomenta la corresponsabilidad en el hogar.", "Mejora la salud mental y la relación con los hijos."] },
+  { chapterId: "familia", docId: "yanomamis-wayuus", question: "¿Quiénes son las abuelas de la plaza de mayo?", keyPoints: ["Asociación en Argentina para encontrar a nietos desaparecidos.", "Víctimas de la dictadura militar.", "Luchan por la memoria histórica, la justicia y la verdad."] },
+  { chapterId: "familia", docId: "ley-familia", question: "¿por qué baja la natalidad hoy en España?", keyPoints: ["Problemas de conciliación laboral/familiar.", "Inestabilidad económica (difícil comprar casa).", "Cambio de prioridades en las nuevas generaciones."] }
+];
+
+// Logique UI pour l'Oral
+const oralView = document.querySelector("#oralView");
+const oralQuestionEl = document.querySelector("#oralQuestion");
+const oralAnswersEl = document.querySelector("#oralAnswers");
+const oralAnswersUl = oralAnswersEl.querySelector("ul");
+const revealOralBtn = document.querySelector("#revealOralBtn");
+const nextOralBtn = document.querySelector("#nextOralBtn");
+
+let activeOralIndex = 0;
+
+function renderOralQuestion() {
+  const currentQ = oralQuestions[activeOralIndex];
+  oralQuestionEl.textContent = currentQ.question;
+  oralAnswersEl.style.display = "none";
+  revealOralBtn.style.display = "inline-block";
+  nextOralBtn.style.display = "none";
+  
+  let answersHtml = currentQ.keyPoints
+    .map(pt => `<li>${pt}</li>`)
+    .join('');
+    
+  if (currentQ.chapterId && currentQ.docId) {
+    answersHtml += `<li style="list-style: none; margin-top: 1rem;"><a href="#${currentQ.chapterId}/${currentQ.docId}" class="cta-line" style="color: var(--primary); font-weight: 500; text-decoration: none;">Voir le document source -&gt;</a></li>`;
+  }
+  
+  oralAnswersUl.innerHTML = answersHtml;
+}
+
+revealOralBtn.addEventListener("click", () => {
+  oralAnswersEl.style.display = "block";
+  revealOralBtn.style.display = "none";
+  nextOralBtn.style.display = "inline-block";
+});
+
+nextOralBtn.addEventListener("click", () => {
+  activeOralIndex = (activeOralIndex + 1) % oralQuestions.length;
+  renderOralQuestion();
+});
+
+function renderOrale() {
+  activeDocumentId = null;
+  chapterView.classList.add("hidden");
+  documentView.classList.add("hidden");
+  if (typeof repassosView !== "undefined") repassosView.classList.add("hidden");
+  oralView.classList.remove("hidden");
+  
+  statusText.textContent = "Question fiche orale";
+  renderNav();
+  
+  activeOralIndex = Math.floor(Math.random() * oralQuestions.length);
+  renderOralQuestion();
+}
+
+function renderRepassos() {
+  activeDocumentId = null;
+  chapterView.classList.add("hidden");
+  documentView.classList.add("hidden");
+  if (typeof oralView !== 'undefined') oralView.classList.add("hidden");
+  if (typeof repassosView !== "undefined") {
+    repassosView.classList.remove("hidden");
+    if (typeof buildRepassosHtml === "function") {
+      repassosView.innerHTML = buildRepassosHtml();
+    } else {
+      repassosView.innerHTML = `
+        <div class="hero">
+          <p class="kicker">Repassos</p>
+          <h1>Repassos de l'année</h1>
+          <p class="chapter-intro">Données introuvables. Vérifie que \`repassos.js\` est bien chargé.</p>
+        </div>
+      `;
+    }
+  }
+  statusText.textContent = "Repassos de l'année";
+  renderNav();
+}
+
 let activeChapterId = chapters[0].id;
 let activeDocumentId = null;
 let contentLanguage = "es";
 let showVocabularyFrench = true;
+let flashcards = [];
+let flashcardIndex = 0;
+let flashcardFlipped = false;
+let flashcardKnown = 0;
+let flashcardUnknown = 0;
+let flashcardPointerId = null;
+let flashcardPointerStartX = 0;
+let flashcardPointerDeltaX = 0;
 
 const scanDetails = {
   "enigma palabra agur - 1.jpg": {
@@ -466,6 +586,83 @@ function getScanDetail(doc, image) {
   return scanDetails[image] || fallbackScanDetail(doc, image);
 }
 
+function shuffle(items) {
+  const copy = [...items];
+  for (let index = copy.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1));
+    [copy[index], copy[randomIndex]] = [copy[randomIndex], copy[index]];
+  }
+  return copy;
+}
+
+function buildVocabularyDeck() {
+  const entries = [];
+  const seen = new Set();
+
+  chapters.forEach((chapter) => {
+    chapter.documents.forEach((doc) => {
+      doc.images.forEach((image) => {
+        const detail = getScanDetail(doc, image);
+        detail.vocabulary.forEach((item) => {
+          const [es, fr] = Array.isArray(item) ? item : [item.es, item.fr];
+          const key = `${es}__${fr}`;
+          if (seen.has(key)) return;
+          seen.add(key);
+          entries.push({
+            id: key,
+            es,
+            fr,
+            chapterId: chapter.id,
+            chapterTitle: chapter.title,
+            documentId: doc.id,
+            documentTitle: doc.title,
+            image,
+          });
+        });
+      });
+    });
+  });
+
+  return entries;
+}
+
+function ensureFlashcards() {
+  if (flashcards.length) return;
+  flashcards = shuffle(buildVocabularyDeck());
+  flashcardIndex = 0;
+  flashcardFlipped = false;
+  flashcardKnown = 0;
+  flashcardUnknown = 0;
+}
+
+function resetFlashcards() {
+  flashcards = shuffle(buildVocabularyDeck());
+  flashcardIndex = 0;
+  flashcardFlipped = false;
+  flashcardKnown = 0;
+  flashcardUnknown = 0;
+}
+
+function currentFlashcard() {
+  return flashcards[flashcardIndex] || null;
+}
+
+function flashcardProgressPercent() {
+  if (!flashcards.length) return 0;
+  return Math.round((flashcardIndex / flashcards.length) * 100);
+}
+
+function classifyFlashcard(direction) {
+  const card = currentFlashcard();
+  if (!card) return;
+
+  if (direction === "known") flashcardKnown += 1;
+  else flashcardUnknown += 1;
+
+  flashcardIndex += 1;
+  flashcardFlipped = false;
+}
+
 function renderVocabulary(items = []) {
   if (!items.length) return `<p class="muted-small">Vocabulaire detaille a completer avec la fiche.</p>`;
   return `
@@ -509,6 +706,12 @@ function getDocument(chapterId, documentId) {
   return chapter.documents.find((doc) => doc.id === documentId) || chapter.documents[0];
 }
 
+function getDocumentLinkLabel({ chapterId, docId }) {
+  const chapter = getChapter(chapterId);
+  const doc = getDocument(chapterId, docId);
+  return `${chapter.number}. ${doc.title}`;
+}
+
 function setHash(chapterId, documentId) {
   const next = documentId ? `#${chapterId}/${documentId}` : `#${chapterId}`;
   if (window.location.hash !== next) window.location.hash = next;
@@ -531,6 +734,8 @@ function renderHome() {
   activeDocumentId = null;
   chapterView.classList.remove("hidden");
   documentView.classList.add("hidden");
+  if (typeof oralView !== 'undefined') oralView.classList.add("hidden");
+  if (typeof repassosView !== "undefined") repassosView.classList.add("hidden");
   statusText.textContent = "Selectionne un chapitre";
   renderNav();
 
@@ -538,6 +743,26 @@ function renderHome() {
     <div class="hero">
       <p class="kicker">Revision espagnol</p>
       <h1>Documents et analyses</h1>
+    </div>
+    <div class="home-actions">
+      <button class="feature-card" type="button" data-home-action="vocabulaire">
+        <span class="pill">Avant les documents</span>
+        <h2>Reviser le vocabulaire</h2>
+        <p>Flash cards en swipe pour memoriser l'espagnol et verifier la traduction.</p>
+        <span class="cta-line">Commencer -&gt;</span>
+      </button>
+      <button class="feature-card" type="button" data-home-action="repassos">
+        <span class="pill">Chronologie</span>
+        <h2>Repassos de l'année</h2>
+        <p>Toutes les séances de repaso, classées par date.</p>
+        <span class="cta-line">Voir les repassos -&gt;</span>
+      </button>
+      <button class="feature-card" type="button" data-home-action="question-orale">
+        <span class="pill">Question fiche orale</span>
+        <h2>Question fiche orale</h2>
+        <p>Prépare la réponse orale avec une entrée simple et rapide.</p>
+        <span class="cta-line">Commencer -&gt;</span>
+      </button>
     </div>
     <div class="chapter-grid">
       ${chapters
@@ -557,6 +782,124 @@ function renderHome() {
   `;
 }
 
+function renderFlashcards() {
+  ensureFlashcards();
+  activeDocumentId = null;
+  chapterView.classList.remove("hidden");
+  documentView.classList.add("hidden");
+  if (typeof oralView !== 'undefined') oralView.classList.add("hidden");
+  if (typeof repassosView !== "undefined") repassosView.classList.add("hidden");
+  statusText.textContent = "Reviser le vocabulaire";
+  renderNav();
+
+  const card = currentFlashcard();
+  const finished = !card;
+
+  chapterView.innerHTML = `
+    <div class="flashcards-shell">
+      <div class="flashcards-hero">
+        <div>
+          <p class="kicker">Revision active</p>
+          <h1>Reviser le vocabulaire</h1>
+          <p class="chapter-intro">Clique sur la carte pour voir la traduction. Swipe a droite si tu sais, a gauche si tu ne sais pas.</p>
+        </div>
+        <div class="flashcards-tools">
+          <button class="nav-button" type="button" data-reset-flashcards>Melanger</button>
+          <button class="nav-button" type="button" data-home>Tout voir</button>
+        </div>
+      </div>
+
+      <div class="flashcards-stats">
+        <div class="note-box">
+          <h3>Progression</h3>
+          <p>${Math.min(flashcardIndex, flashcards.length)} / ${flashcards.length} cartes</p>
+        </div>
+        <div class="note-box">
+          <h3>Je sais</h3>
+          <p>${flashcardKnown}</p>
+        </div>
+        <div class="note-box">
+          <h3>Je sais pas</h3>
+          <p>${flashcardUnknown}</p>
+        </div>
+      </div>
+
+      <div class="flashcards-progress">
+        <span class="flashcards-progress-bar" style="width: ${flashcardProgressPercent()}%"></span>
+      </div>
+
+      ${
+        finished
+          ? `
+            <div class="flashcards-finished">
+              <span class="pill">Session terminee</span>
+              <h2>Tu as revu ${flashcards.length} mots.</h2>
+              <p>${flashcardKnown} connus, ${flashcardUnknown} a revoir. Tu peux remelanger le paquet et recommencer.</p>
+              <div class="flashcards-actions">
+                <button class="nav-button" type="button" data-reset-flashcards>Recommencer</button>
+                <button class="nav-button" type="button" data-home>Retour accueil</button>
+              </div>
+            </div>
+          `
+          : `
+            <section class="flashcard-stage">
+              <div class="swipe-hint swipe-hint-left">Je sais pas</div>
+              <button
+                class="flashcard ${flashcardFlipped ? "is-flipped" : ""}"
+                type="button"
+                data-flashcard
+                data-flashcard-id="${card.id}"
+              >
+                <div class="flashcard-face flashcard-front">
+                  <span class="pill">${card.chapterTitle}</span>
+                  <p class="flashcard-label">Espagnol</p>
+                  <h2>${card.es}</h2>
+                  <p class="flashcard-meta">${card.documentTitle}</p>
+                  <p class="flashcard-click-hint">👉 Clique pour voir en français</p>
+                </div>
+                <div class="flashcard-face flashcard-back">
+                  <span class="pill">Traduction</span>
+                  <p class="flashcard-label">Francais</p>
+                  <h2>${card.fr}</h2>
+                  <p class="flashcard-meta">Clique puis swipe pour classer la carte.</p>
+                </div>
+              </button>
+              <div class="swipe-hint swipe-hint-right">Je sais</div>
+            </section>
+
+            <div class="flashcards-actions">
+              <button class="nav-button flashcards-nope" type="button" data-flash-action="unknown">← Je sais pas</button>
+              <button class="nav-button flashcards-know" type="button" data-flash-action="known">Je sais →</button>
+            </div>
+          `
+      }
+    </div>
+  `;
+}
+
+function renderRepassos() {
+  activeDocumentId = null;
+  chapterView.classList.add("hidden");
+  documentView.classList.add("hidden");
+  if (typeof oralView !== 'undefined') oralView.classList.add("hidden");
+  if (typeof repassosView !== "undefined") repassosView.classList.remove("hidden");
+
+  statusText.textContent = "Repassos";
+  renderNav();
+
+  if (typeof buildRepassosHtml === "function") {
+    repassosView.innerHTML = buildRepassosHtml({ getDocumentLabel: getDocumentLinkLabel });
+    return;
+  }
+
+  repassosView.innerHTML = `
+    <div class="note-box">
+      <h3>Repassos indisponibles</h3>
+      <p>Le contenu n'a pas encore ete charge. Verifie le fichier repassos.js.</p>
+    </div>
+  `;
+}
+
 function renderChapter(chapterId = activeChapterId) {
   activeChapterId = chapterId;
   activeDocumentId = null;
@@ -564,6 +907,8 @@ function renderChapter(chapterId = activeChapterId) {
 
   chapterView.classList.remove("hidden");
   documentView.classList.add("hidden");
+  if (typeof oralView !== 'undefined') oralView.classList.add("hidden");
+  if (typeof repassosView !== "undefined") repassosView.classList.add("hidden");
   statusText.textContent = `${chapter.number}. ${chapter.title}`;
   renderNav();
 
@@ -618,9 +963,13 @@ function renderDocument(chapterId = activeChapterId, documentId) {
   const previous = chapter.documents[index - 1];
   const next = chapter.documents[index + 1];
   const details = doc.images.map((image) => ({ image, detail: getScanDetail(doc, image) }));
+  const linkedRepassos =
+    typeof getRepassosForDocument === "function" ? getRepassosForDocument(chapterId, doc.id) : [];
 
   chapterView.classList.add("hidden");
   documentView.classList.remove("hidden");
+  if (typeof oralView !== 'undefined') oralView.classList.add("hidden");
+  if (typeof repassosView !== "undefined") repassosView.classList.add("hidden");
   statusText.textContent = `${chapter.number}. ${chapter.title} · ${index + 1}/${chapter.documents.length}`;
   renderNav();
 
@@ -660,6 +1009,31 @@ function renderDocument(chapterId = activeChapterId, documentId) {
           <button class="nav-button" type="button" data-doc="${previous?.id || ""}" ${previous ? "" : "disabled"}>← Precedent</button>
           <button class="nav-button" type="button" data-doc="${next?.id || ""}" ${next ? "" : "disabled"}>Suivant →</button>
         </div>
+
+        ${
+          linkedRepassos.length
+            ? `
+              <section class="analysis-card repasso-section">
+                <h2>Repassos liés</h2>
+                <div class="linked-repassos-list">
+                  ${linkedRepassos
+                    .map(
+                      (entry) => `
+                        <details class="linked-repasso-card">
+                          <summary>
+                            <span class="pill">${entry.date}</span>
+                            <strong>${entry.title}</strong>
+                          </summary>
+                          <pre class="repassos-text">${entry.fullText}</pre>
+                        </details>
+                      `,
+                    )
+                    .join("")}
+                </div>
+              </section>
+            `
+            : ""
+        }
 
         <div class="analysis-card">
           <div class="analysis-head">
@@ -722,6 +1096,18 @@ function readHash() {
     renderHome();
     return;
   }
+  if (chapterId === "vocabulaire") {
+    renderFlashcards();
+    return;
+  }
+  if (chapterId === "repassos") {
+    renderRepassos();
+    return;
+  }
+  if (chapterId === "question-orale") {
+    renderOrale();
+    return;
+  }
   const chapterExists = chapters.some((chapter) => chapter.id === chapterId);
   if (!chapterExists) {
     renderHome();
@@ -735,6 +1121,8 @@ document.addEventListener("click", (event) => {
   const chapterTarget = event.target.closest("[data-chapter]");
   const docTarget = event.target.closest("[data-doc]");
   const fullImageTarget = event.target.closest("[data-full-image]");
+  const homeActionTarget = event.target.closest("[data-home-action]");
+  const flashActionTarget = event.target.closest("[data-flash-action]");
 
   if (fullImageTarget) {
     openImageLightbox(fullImageTarget.dataset.fullImage, fullImageTarget.dataset.fullAlt || "");
@@ -754,6 +1142,43 @@ document.addEventListener("click", (event) => {
   if (event.target.closest("[data-open-first]")) {
     const chapter = getChapter();
     setHash(chapter.id, chapter.documents[0].id);
+    return;
+  }
+
+  if (homeActionTarget) {
+    if (homeActionTarget.dataset.homeAction === "vocabulaire") {
+      setHash("vocabulaire");
+      return;
+    }
+    if (homeActionTarget.dataset.homeAction === "repassos") {
+      setHash("repassos");
+      return;
+    }
+    if (homeActionTarget.dataset.homeAction === "question-orale") {
+      setHash("question-orale");
+      return;
+    }
+    const chapter = getChapter();
+    setHash(chapter.id, chapter.documents[0].id);
+    return;
+  }
+
+  if (event.target.closest("[data-reset-flashcards]")) {
+    resetFlashcards();
+    renderFlashcards();
+    return;
+  }
+
+  if (flashActionTarget) {
+    classifyFlashcard(flashActionTarget.dataset.flashAction);
+    renderFlashcards();
+    return;
+  }
+
+  if (event.target.closest("[data-flashcard]")) {
+    flashcardFlipped = !flashcardFlipped;
+    const cardEl = document.querySelector("[data-flashcard]");
+    if (cardEl) cardEl.classList.toggle("is-flipped", flashcardFlipped);
     return;
   }
 
@@ -786,12 +1211,89 @@ document.addEventListener("keydown", (event) => {
     return;
   }
 
+  if (window.location.hash === "#vocabulaire") {
+    if (event.key === " " || event.key === "Enter") {
+      event.preventDefault();
+      if (currentFlashcard()) {
+        flashcardFlipped = !flashcardFlipped;
+        const cardEl = document.querySelector("[data-flashcard]");
+        if (cardEl) cardEl.classList.toggle("is-flipped", flashcardFlipped);
+      }
+      return;
+    }
+
+    if (event.key === "ArrowRight") {
+      classifyFlashcard("known");
+      renderFlashcards();
+      return;
+    }
+
+    if (event.key === "ArrowLeft") {
+      classifyFlashcard("unknown");
+      renderFlashcards();
+      return;
+    }
+  }
+
   if (!activeDocumentId || (event.key !== "ArrowRight" && event.key !== "ArrowLeft")) return;
   const chapter = getChapter();
   const index = chapter.documents.findIndex((doc) => doc.id === activeDocumentId);
   const nextIndex = event.key === "ArrowRight" ? index + 1 : index - 1;
   const nextDoc = chapter.documents[nextIndex];
   if (nextDoc) setHash(chapter.id, nextDoc.id);
+});
+
+document.addEventListener("pointerdown", (event) => {
+  const flashcardTarget = event.target.closest("[data-flashcard]");
+  if (!flashcardTarget) return;
+  flashcardPointerId = event.pointerId;
+  flashcardPointerStartX = event.clientX;
+  flashcardPointerDeltaX = 0;
+  flashcardTarget.setPointerCapture?.(event.pointerId);
+});
+
+document.addEventListener("pointermove", (event) => {
+  if (flashcardPointerId !== event.pointerId) return;
+  const flashcardTarget = document.querySelector("[data-flashcard]");
+  if (!flashcardTarget) return;
+  flashcardPointerDeltaX = event.clientX - flashcardPointerStartX;
+  const flipTransform = flashcardTarget.classList.contains("is-flipped") ? " rotateY(180deg)" : "";
+  flashcardTarget.style.transform = `translateX(${flashcardPointerDeltaX}px) rotate(${flashcardPointerDeltaX / 18}deg)${flipTransform}`;
+  flashcardTarget.dataset.swipeDirection =
+    flashcardPointerDeltaX > 24 ? "right" : flashcardPointerDeltaX < -24 ? "left" : "";
+});
+
+document.addEventListener("pointerup", (event) => {
+  if (flashcardPointerId !== event.pointerId) return;
+  const flashcardTarget = document.querySelector("[data-flashcard]");
+  const deltaX = flashcardPointerDeltaX;
+  flashcardPointerId = null;
+  flashcardPointerStartX = 0;
+  flashcardPointerDeltaX = 0;
+
+  if (!flashcardTarget) return;
+
+  if (Math.abs(deltaX) > 110) {
+    flashcardTarget.classList.add(deltaX > 0 ? "swipe-out-right" : "swipe-out-left");
+    window.setTimeout(() => {
+      classifyFlashcard(deltaX > 0 ? "known" : "unknown");
+      renderFlashcards();
+    }, 180);
+    return;
+  }
+
+  flashcardTarget.style.transform = "";
+  flashcardTarget.dataset.swipeDirection = "";
+});
+
+document.addEventListener("pointercancel", () => {
+  flashcardPointerId = null;
+  flashcardPointerStartX = 0;
+  flashcardPointerDeltaX = 0;
+  const flashcardTarget = document.querySelector("[data-flashcard]");
+  if (!flashcardTarget) return;
+  flashcardTarget.style.transform = "";
+  flashcardTarget.dataset.swipeDirection = "";
 });
 
 window.addEventListener("hashchange", readHash);

@@ -30,6 +30,33 @@
 
         <section id="chapterView" class="view"></section>
         <section id="documentView" class="view hidden"></section>
+        <section id="repassosView" class="view hidden"></section>
+        <section id="oralView" class="view hidden">
+          <div class="flashcards-shell">
+            <div class="flashcards-hero">
+              <div>
+                <p class="kicker">Entraînement Oral</p>
+                <h1>Question fiche orale</h1>
+                <p class="chapter-intro">Prépare la réponse orale avec ces questions. <strong>Regla del juego:</strong> 30s de parole, max 3 erreurs.<br>Réfléchis, puis clique sur "Revelar" pour afficher les points clés de réponse.</p>
+              </div>
+            </div>
+
+            <div class="flashcard-container" style="justify-content: flex-start; align-items: center; display: flex; flex-direction: column;">
+              <div class="flashcard" style="cursor: default; height: auto; min-height: 300px; padding: 0;">
+                <div class="flashcard-face flashcard-front" style="position: relative; min-height: 300px; padding: 2rem;">
+                  <h2 id="oralQuestion" style="font-size: 1.5rem; text-align: center; margin-bottom: 2rem;"></h2>
+                  <div id="oralAnswers" style="text-align: left; display: none; width: 100%;">
+                    <ul style="font-size: 1.1rem; line-height: 1.6; gap: 1rem; display: flex; flex-direction: column;"></ul>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                <button id="revealOralBtn" class="primary-button" type="button">Revelar puntos clave</button>
+                <button id="nextOralBtn" class="primary-button" type="button" style="display: none;">Siguiente pregunta</button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
 
@@ -38,6 +65,7 @@
       <img id="lightboxImage" alt="" />
     </div>
 
+    <script src="repassos.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
