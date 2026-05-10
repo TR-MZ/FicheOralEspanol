@@ -1,0 +1,341 @@
+{
+  "id": "comparatifs",
+  "title": "Comparatifs et progression",
+  "rule": "Emploie les comparatifs espagnols pour exprimer la supériorité, l'infériorité, l'égalité et la progression : más que, menos que, tan... como, cada vez más/menos, cuanto más... más....",
+  "sections": [
+    {
+      "title": "Progression",
+      "subtitle": "cada vez más / cada vez menos",
+      "examples": [
+        {
+          "formule": "cada vez más",
+          "exemple": "La natalidad en España es cada vez más baja."
+        },
+        {
+          "formule": "cada vez menos",
+          "exemple": "Los jóvenes leen cada vez menos prensa en papel."
+        }
+      ],
+      "exerciseIds": [
+        "comparatifs-001",
+        "comparatifs-002",
+        "comparatifs-003",
+        "comparatifs-004",
+        "comparatifs-007",
+        "comparatifs-008",
+        "comparatifs-018",
+        "comparatifs-019",
+        "comparatifs-024"
+      ]
+    },
+    {
+      "title": "Corrélatifs",
+      "subtitle": "cuanto más... más...",
+      "examples": [
+        {
+          "formule": "cuanto más... más...",
+          "exemple": "Cuanto más estudias una lengua, más seguro te sientes."
+        }
+      ],
+      "exerciseIds": [
+        "comparatifs-005",
+        "comparatifs-006",
+        "comparatifs-020",
+        "comparatifs-025",
+        "comparatifs-029"
+      ]
+    },
+    {
+      "title": "Supériorité et infériorité",
+      "subtitle": "más que / menos que",
+      "examples": [
+        {
+          "formule": "más que",
+          "exemple": "El debate político es más intenso que el de hace diez años."
+        },
+        {
+          "formule": "menos que",
+          "exemple": "La climatología del norte es menos seca que la del sur."
+        }
+      ],
+      "exerciseIds": [
+        "comparatifs-009",
+        "comparatifs-010",
+        "comparatifs-012",
+        "comparatifs-013",
+        "comparatifs-014",
+        "comparatifs-016",
+        "comparatifs-017",
+        "comparatifs-021",
+        "comparatifs-023",
+        "comparatifs-026",
+        "comparatifs-031",
+        "comparatifs-032"
+      ]
+    },
+    {
+      "title": "Égalité",
+      "subtitle": "tan... como",
+      "examples": [
+        {
+          "formule": "tan... como",
+          "exemple": "El clima de Valencia no es tan frío como el de Burgos."
+        }
+      ],
+      "exerciseIds": [
+        "comparatifs-011",
+        "comparatifs-015",
+        "comparatifs-022",
+        "comparatifs-030",
+        "comparatifs-033"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "comparatifs-001",
+      "type": "completion",
+      "prompt": "Complète : En España, la natalidad es cada vez ____ baja.",
+      "answer": "más",
+      "hint": "Exprime une progression vers le haut."
+    },
+    {
+      "id": "comparatifs-002",
+      "type": "completion",
+      "prompt": "Complète : Las olas de calor son cada vez ____ frecuentes.",
+      "answer": "más",
+      "hint": "Même structure que 'cada vez más'."
+    },
+    {
+      "id": "comparatifs-003",
+      "type": "completion",
+      "prompt": "Complète : Los jóvenes usan cada vez ____ las lenguas regionales en casa.",
+      "answer": "menos",
+      "hint": "Pense à une diminution progressive."
+    },
+    {
+      "id": "comparatifs-004",
+      "type": "completion",
+      "prompt": "Complète : En redes sociales, los mensajes de odio son cada vez ____ visibles.",
+      "answer": "más",
+      "hint": "Il s'agit d'une augmentation."
+    },
+    {
+      "id": "comparatifs-005",
+      "type": "completion",
+      "prompt": "Complète : Cuanto ____ estudias español, más fácil te resulta debatir sobre política.",
+      "answer": "más",
+      "hint": "La première partie de la structure est 'Cuanto más...'."
+    },
+    {
+      "id": "comparatifs-006",
+      "type": "completion",
+      "prompt": "Complète : Cuanto más se habla de clima, ____ conciencia hay sobre el ahorro de agua.",
+      "answer": "más",
+      "hint": "La deuxième partie reprend 'más'."
+    },
+    {
+      "id": "comparatifs-007",
+      "type": "completion",
+      "prompt": "Complète : La participación política de los adolescentes es cada vez ____ importante en los institutos.",
+      "answer": "más",
+      "hint": "Tu dois garder le sens d'une hausse."
+    },
+    {
+      "id": "comparatifs-008",
+      "type": "completion",
+      "prompt": "Complète : En otoño llueve cada vez ____ en algunas regiones de España.",
+      "answer": "menos",
+      "hint": "On observe une baisse de fréquence."
+    },
+    {
+      "id": "comparatifs-009",
+      "type": "transformation",
+      "prompt": "Transforme avec un comparatif : La natalidad en Francia es alta; la natalidad en España es baja.",
+      "answer": "La natalidad en España es más baja que la de Francia.",
+      "hint": "Utilise 'más ... que'."
+    },
+    {
+      "id": "comparatifs-010",
+      "type": "transformation",
+      "prompt": "Transforme avec un comparatif : Los discursos ecologistas son intensos; los discursos políticos son menos intensos.",
+      "answer": "Los discursos políticos son menos intensos que los ecologistas.",
+      "hint": "Cherche l'infériorité."
+    },
+    {
+      "id": "comparatifs-011",
+      "type": "transformation",
+      "prompt": "Transforme avec un comparatif : El uso de TikTok y el uso de Instagram tienen la misma intensidad.",
+      "answer": "El uso de TikTok es tan intenso como el de Instagram.",
+      "hint": "C'est un comparatif d'égalité."
+    },
+    {
+      "id": "comparatifs-012",
+      "type": "transformation",
+      "prompt": "Transforme avec un comparatif : Hoy hay más debates sobre lengua que antes.",
+      "answer": "Hoy los debates sobre lengua son más numerosos que antes.",
+      "hint": "Garde le sens comparatif et reformule naturellement."
+    },
+    {
+      "id": "comparatifs-013",
+      "type": "transformation",
+      "prompt": "Transforme avec un comparatif : El agua está escasa en verano; en primavera está menos escasa.",
+      "answer": "En primavera, el agua está menos escasa que en verano.",
+      "hint": "Même adjectif, mais avec comparaison."
+    },
+    {
+      "id": "comparatifs-014",
+      "type": "transformation",
+      "prompt": "Transforme avec un comparatif : Las redes sociales influyen mucho; la televisión influye menos.",
+      "answer": "Las redes sociales influyen más que la televisión.",
+      "hint": "Utilise la supériorité."
+    },
+    {
+      "id": "comparatifs-015",
+      "type": "transformation",
+      "prompt": "Transforme avec un comparatif : El catalán y el gallego tienen el mismo prestigio en este instituto.",
+      "answer": "El catalán es tan prestigioso como el gallego en este instituto.",
+      "hint": "Égalité = tan... como."
+    },
+    {
+      "id": "comparatifs-016",
+      "type": "transformation",
+      "prompt": "Transforme avec un comparatif : El debate sobre la inmigración es muy complejo; el de la natalidad es más complejo.",
+      "answer": "El debate sobre la natalidad es más complejo que el de la inmigración.",
+      "hint": "Inverse les deux éléments si nécessaire."
+    },
+    {
+      "id": "comparatifs-017",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : La natalité est plus faible qu'avant.",
+      "answer": "La natalidad es más baja que antes.",
+      "hint": "Choisis un adjectif fréquent avec la natalidad."
+    },
+    {
+      "id": "comparatifs-018",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Les vagues de chaleur sont de plus en plus fortes.",
+      "answer": "Las olas de calor son cada vez más fuertes.",
+      "hint": "Utilise 'cada vez más'."
+    },
+    {
+      "id": "comparatifs-019",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Les jeunes lisent de moins en moins de journaux.",
+      "answer": "Los jóvenes leen cada vez menos periódicos.",
+      "hint": "Exprime la diminution progressive."
+    },
+    {
+      "id": "comparatifs-020",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Plus on parle des langues coofficielles, plus le débat politique devient vif.",
+      "answer": "Cuanto más se habla de las lenguas cooficiales, más vivo se vuelve el debate político.",
+      "hint": "Structure en deux parties avec 'Cuanto más... más...'."
+    },
+    {
+      "id": "comparatifs-021",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Le climat de Bilbao est moins sec que celui de Murcia.",
+      "answer": "El clima de Bilbao es menos seco que el de Murcia.",
+      "hint": "Utilise 'menos... que'."
+    },
+    {
+      "id": "comparatifs-022",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Les réseaux sociaux sont aussi influents que la télévision.",
+      "answer": "Las redes sociales son tan influyentes como la televisión.",
+      "hint": "Égalité avec 'tan... como'."
+    },
+    {
+      "id": "comparatifs-023",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Le discours du candidat est plus convaincant que celui de son adversaire.",
+      "answer": "El discurso del candidato es más convincente que el de su adversario.",
+      "hint": "Garde la structure comparative simple."
+    },
+    {
+      "id": "comparatifs-024",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Il y a de moins en moins de naissances dans ce pays.",
+      "answer": "Hay cada vez menos nacimientos en este país.",
+      "hint": "Pense à 'cada vez menos'."
+    },
+    {
+      "id": "comparatifs-025",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Plus on protège la forêt, plus le climat local est stable.",
+      "answer": "Cuanto más se protege el bosque, más estable es el clima local.",
+      "hint": "Deux propositions corrélatives."
+    },
+    {
+      "id": "comparatifs-026",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : La politique actuelle est plus divisée qu'il y a dix ans.",
+      "answer": "La política actual está más dividida que hace diez años.",
+      "hint": "Utilise un comparatif de supériorité."
+    },
+    {
+      "id": "comparatifs-027",
+      "type": "choix",
+      "prompt": "Choisis la bonne réponse pour compléter : En España, la natalidad es cada vez ____ baja. A) más B) menos C) tan",
+      "answer": "A",
+      "hint": "La progression va vers le haut."
+    },
+    {
+      "id": "comparatifs-028",
+      "type": "choix",
+      "prompt": "Choisis la bonne réponse pour compléter : Los jóvenes usan cada vez ____ los libros impresos. A) más B) menos C) tan",
+      "answer": "B",
+      "hint": "On parle d'une diminution progressive."
+    },
+    {
+      "id": "comparatifs-029",
+      "type": "choix",
+      "prompt": "Choisis la bonne réponse pour compléter : Cuanto más estudias idiomas, ____ fácil te resulta comunicarte. A) más B) menos C) tan",
+      "answer": "A",
+      "hint": "Structure corrélative."
+    },
+    {
+      "id": "comparatifs-030",
+      "type": "choix",
+      "prompt": "Choisis la bonne réponse pour compléter : El clima de Galicia no es ____ seco como el de Almería. A) más B) menos C) tan",
+      "answer": "C",
+      "hint": "Cherche l'égalité : tan... como."
+    },
+    {
+      "id": "comparatifs-031",
+      "type": "choix",
+      "prompt": "Choisis la bonne réponse pour compléter : Las redes sociales son ____ influyentes que la radio en la vida de los adolescentes. A) más B) menos C) tan",
+      "answer": "A",
+      "hint": "Supériorité."
+    },
+    {
+      "id": "comparatifs-032",
+      "type": "choix",
+      "prompt": "Choisis la bonne réponse pour compléter : El debate sobre política es ____ intenso que hace veinte años. A) más B) menos C) tan",
+      "answer": "A",
+      "hint": "On compare deux époques."
+    },
+    {
+      "id": "comparatifs-033",
+      "type": "choix",
+      "prompt": "Choisis la bonne réponse pour compléter : En verano hay ____ lluvia en el sur de España. A) más B) menos C) tan",
+      "answer": "B",
+      "hint": "C'est une baisse de quantité."
+    },
+    {
+      "id": "comparatifs-034",
+      "type": "choix",
+      "prompt": "Choisis la bonne réponse pour compléter : Las lenguas cooficiales son ____ importantes como el castellano en la vida cultural. A) más B) menos C) tan",
+      "answer": "C",
+      "hint": "Égalité."
+    },
+    {
+      "id": "comparatifs-035",
+      "type": "choix",
+      "prompt": "Choisis la bonne réponse pour compléter : Cuanto más se polariza la política, ____ difícil es llegar a acuerdos. A) más B) menos C) tan",
+      "answer": "A",
+      "hint": "La difficulté augmente en parallèle."
+    }
+  ]
+}

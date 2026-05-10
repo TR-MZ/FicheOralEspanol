@@ -1,0 +1,235 @@
+{
+  "id": "connecteurs",
+  "title": "Connecteurs et contraste",
+  "rule": "On utilise ces connecteurs pour opposer deux idées ou nuancer un propos. \"Aunque\" introduit une concession et peut se traduire par \"bien que\" ou \"même si\". \"Sin embargo\" marque un contraste net entre deux phrases. \"Mientras que\" sert à comparer ou opposer deux réalités. \"Por una parte... por otra parte...\" organise une opposition en deux points. \"En cambio\" indique une différence entre deux éléments ou deux situations.",
+  "examples": [
+    {
+      "sentence": "Aunque la película parece real, sigue siendo ficción.",
+      "meaning": "Concession entre fiction et réalité"
+    },
+    {
+      "sentence": "La familia quería tranquilidad; sin embargo, llegó una nueva crisis.",
+      "meaning": "Contraste avec sin embargo"
+    },
+    {
+      "sentence": "Mientras que unos apoyan la IA, otros la critican.",
+      "meaning": "Opposition entre deux groupes"
+    },
+    {
+      "sentence": "Por una parte, el clima mejora; por otra parte, siguen los problemas.",
+      "meaning": "Deux aspects opposés"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "connecteurs-001",
+      "type": "completion",
+      "prompt": "Complète avec le bon connecteur : ______ estaba cansado, siguió estudiando para el examen.",
+      "answer": "Aunque",
+      "hint": "Introduit une concession."
+    },
+    {
+      "id": "connecteurs-002",
+      "type": "completion",
+      "prompt": "Complète avec le bon connecteur : Querían vivir en paz; ______, empezó otra discusión familiar.",
+      "answer": "sin embargo",
+      "hint": "Exprime un contraste net."
+    },
+    {
+      "id": "connecteurs-003",
+      "type": "completion",
+      "prompt": "Complète avec le bon connecteur : La ficción promete un mundo ideal, ______ la realidad es más dura.",
+      "answer": "mientras que",
+      "hint": "Compare deux réalités opposées."
+    },
+    {
+      "id": "connecteurs-004",
+      "type": "completion",
+      "prompt": "Complète avec le bon connecteur : ______, la IA ayuda a ahorrar tiempo; ______, puede crear desinformación.",
+      "answer": "por una parte / por otra parte",
+      "hint": "Structure en deux parties opposées."
+    },
+    {
+      "id": "connecteurs-005",
+      "type": "completion",
+      "prompt": "Complète avec le bon connecteur : El político prometió cambios; ______, no explicó cómo financiarlos.",
+      "answer": "sin embargo",
+      "hint": "La deuxième idée contredit la première."
+    },
+    {
+      "id": "connecteurs-006",
+      "type": "completion",
+      "prompt": "Complète avec le bon connecteur : Mi madre defiende la tradición, ______ mi hermano prefiere la innovación.",
+      "answer": "mientras que",
+      "hint": "Deux préférences opposées."
+    },
+    {
+      "id": "connecteurs-007",
+      "type": "completion",
+      "prompt": "Complète avec le bon connecteur : ______ hay más calor, la gente sigue pidiendo más agua.",
+      "answer": "Aunque",
+      "hint": "Même si une situation existe, l'action continue."
+    },
+    {
+      "id": "connecteurs-008",
+      "type": "completion",
+      "prompt": "Complète avec le bon connecteur : La familia quería celebrar; ______, la noticia del clima lo cambió todo.",
+      "answer": "sin embargo",
+      "hint": "Marqueur d'opposition après un point-virgule."
+    },
+    {
+      "id": "connecteurs-009",
+      "type": "completion",
+      "prompt": "Complète avec le bon connecteur : ______, en la ficción todo sale bien; ______, en la vida real hay errores.",
+      "answer": "por una parte / por otra parte",
+      "hint": "Présente deux faces d'un même sujet."
+    },
+    {
+      "id": "connecteurs-010",
+      "type": "completion",
+      "prompt": "Complète avec le bon connecteur : Los jóvenes apoyan la IA, ______ muchos profesores piden prudencia.",
+      "answer": "mientras que",
+      "hint": "Opposition entre groupes."
+    },
+    {
+      "id": "connecteurs-011",
+      "type": "transformation",
+      "prompt": "Transforme la phrase en utilisant « aunque » : « Hace frío, pero salimos al patio. »",
+      "answer": "Aunque hace frío, salimos al patio.",
+      "hint": "Commence par le connecteur concessif."
+    },
+    {
+      "id": "connecteurs-012",
+      "type": "transformation",
+      "prompt": "Transforme la phrase en utilisant « sin embargo » : « La campaña parecía convincente, pero no era real. »",
+      "answer": "La campaña parecía convincente; sin embargo, no era real.",
+      "hint": "Tu peux séparer les deux idées par un point-virgule."
+    },
+    {
+      "id": "connecteurs-013",
+      "type": "transformation",
+      "prompt": "Transforme la phrase en utilisant « mientras que » : « En la ficción, los problemas se resuelven rápido; en la realidad, no. »",
+      "answer": "Mientras que en la ficción los problemas se resuelven rápido, en la realidad no.",
+      "hint": "Compare fiction et réalité."
+    },
+    {
+      "id": "connecteurs-014",
+      "type": "transformation",
+      "prompt": "Transforme la phrase en utilisant « en cambio » : « Marta acepta la IA; su hermano la rechaza. »",
+      "answer": "Marta acepta la IA; en cambio, su hermano la rechaza.",
+      "hint": "Montre une différence entre deux personnes."
+    },
+    {
+      "id": "connecteurs-015",
+      "type": "transformation",
+      "prompt": "Transforme la phrase en utilisant « por una parte / por otra parte » : « La IA ayuda a estudiar, pero también puede copiar respuestas. »",
+      "answer": "Por una parte, la IA ayuda a estudiar; por otra parte, puede copiar respuestas.",
+      "hint": "Présente les deux aspects séparément."
+    },
+    {
+      "id": "connecteurs-016",
+      "type": "transformation",
+      "prompt": "Transforme la phrase en utilisant « aunque » : « La familia está dividida, pero sigue unida. »",
+      "answer": "Aunque la familia está dividida, sigue unida.",
+      "hint": "Concession avec maintien du fait principal."
+    },
+    {
+      "id": "connecteurs-017",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Même si le climat change, les gens continuent à vivre ici.",
+      "answer": "Aunque cambia el clima, la gente sigue viviendo aquí.",
+      "hint": "Utilise aunque pour la concession."
+    },
+    {
+      "id": "connecteurs-018",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : La fiction semble parfaite, mais la réalité est plus complexe.",
+      "answer": "La ficción parece perfecta; sin embargo, la realidad es más compleja.",
+      "hint": "Opposition forte entre deux idées."
+    },
+    {
+      "id": "connecteurs-019",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Tandis que le père défend la tradition, la mère soutient le changement.",
+      "answer": "Mientras que el padre defiende la tradición, la madre apoya el cambio.",
+      "hint": "Mientras que sert à comparer deux attitudes."
+    },
+    {
+      "id": "connecteurs-020",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : D'une part, la politique promet beaucoup; d'autre part, elle change peu.",
+      "answer": "Por una parte, la política promete mucho; por otra parte, cambia poco.",
+      "hint": "Garde la structure en deux parties."
+    },
+    {
+      "id": "connecteurs-021",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : La famille veut aider, pourtant elle ne sait pas comment.",
+      "answer": "La familia quiere ayudar; sin embargo, no sabe cómo.",
+      "hint": "Pourtant = sin embargo."
+    },
+    {
+      "id": "connecteurs-022",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Alors que certains craignent l'IA, d'autres la voient comme une opportunité.",
+      "answer": "Mientras que algunos temen la IA, otros la ven como una oportunidad.",
+      "hint": "Opposition entre deux groupes."
+    },
+    {
+      "id": "connecteurs-023",
+      "type": "choix",
+      "prompt": "Choisis le bon connecteur : \"La película parece real, ___ es pura ficción.\" A) aunque B) sin embargo C) mientras que",
+      "answer": "A) aunque",
+      "hint": "La deuxième idée est une concession."
+    },
+    {
+      "id": "connecteurs-024",
+      "type": "choix",
+      "prompt": "Choisis le bon connecteur : \"Quería ayudar a la familia; ___, no tuvo tiempo.\" A) mientras que B) sin embargo C) por una parte",
+      "answer": "B) sin embargo",
+      "hint": "On oppose une intention et un obstacle."
+    },
+    {
+      "id": "connecteurs-025",
+      "type": "choix",
+      "prompt": "Choisis le bon connecteur : \"Los jóvenes usan más la IA, ___ sus abuelos prefieren no hacerlo.\" A) mientras que B) aunque C) en cambio",
+      "answer": "A) mientras que",
+      "hint": "Comparaison de deux générations."
+    },
+    {
+      "id": "connecteurs-026",
+      "type": "choix",
+      "prompt": "Choisis le bon connecteur : \"___, la política promete soluciones; ___, no siempre las cumple.\" A) por una parte / por otra parte B) aunque / sin embargo C) en cambio / mientras que",
+      "answer": "A) por una parte / por otra parte",
+      "hint": "Structure en deux aspects opposés."
+    },
+    {
+      "id": "connecteurs-027",
+      "type": "choix",
+      "prompt": "Choisis le bon connecteur : \"Mi hermana quiere vivir en la ciudad; ___, yo prefiero el campo.\" A) en cambio B) aunque C) por una parte",
+      "answer": "A) en cambio",
+      "hint": "Différence entre deux préférences."
+    },
+    {
+      "id": "connecteurs-028",
+      "type": "choix",
+      "prompt": "Choisis le bon connecteur : \"___ haga calor, seguimos ahorrando agua.\" A) Aunque B) Mientras que C) Sin embargo",
+      "answer": "A) Aunque",
+      "hint": "Concession suivie d'une action maintenue."
+    },
+    {
+      "id": "connecteurs-029",
+      "type": "choix",
+      "prompt": "Choisis le bon connecteur : \"En la ficción todo es rápido; ___, en la realidad hay paciencia.\" A) mientras que B) aunque C) por una parte",
+      "answer": "A) mientras que",
+      "hint": "Opposition entre fiction et réalité."
+    },
+    {
+      "id": "connecteurs-030",
+      "type": "choix",
+      "prompt": "Choisis le bon connecteur : \"La IA puede ser útil; ___, también puede manipular imágenes.\" A) sin embargo B) aunque C) mientras que",
+      "answer": "A) sin embargo",
+      "hint": "Le second membre nuance ou contredit le premier."
+    }
+  ]
+}

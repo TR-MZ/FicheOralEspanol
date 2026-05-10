@@ -1,0 +1,50 @@
+{
+  "topicId": "futuro",
+  "title": "Futur simple",
+  "use": "Le futur simple sert à exprimer une action à venir, une prédiction, une hypothèse, une promesse ou une supposition sur le présent. En espagnol, il est fréquent pour parler d'événements futurs, mais aussi pour donner une idée probable ou atténuer une affirmation.",
+  "formation": [
+    "On part de l'infinitif du verbe et on ajoute les terminaisons du futur simple, sans enlever la terminaison -ar, -er ou -ir.",
+    "Les terminaisons sont les mêmes pour tous les verbes réguliers.",
+    "Pour les verbes irréguliers, le changement porte sur le radical, mais les terminaisons restent identiques.",
+    "Le futur simple est souvent plus écrit et plus soutenu que la tournure avec « ir a + infinitif », très fréquente à l'oral.",
+    "Il permet aussi d'exprimer une probabilité : « ¿Dónde estará Marta? » signifie souvent « Où peut-elle bien être ? »."
+  ],
+  "endings": [
+    {
+      "group": "tous les verbes",
+      "forms": ["-é", "-ás", "-á", "-emos", "-éis", "-án"]
+    }
+  ],
+  "irregulars": [
+    {
+      "pattern": "Radicaux irréguliers fréquents",
+      "verbs": [
+        "tener: tendr-",
+        "poder: podr-",
+        "hacer: har-",
+        "decir: dir-",
+        "poner: pondr-",
+        "salir: saldr-",
+        "venir: vendr-",
+        "querer: querr-",
+        "saber: sabr-"
+      ],
+      "example": "Mañana tendré clase, podré estudiar y diré la verdad."
+    }
+  ],
+  "tips": [
+    "Apprends les terminaisons une seule fois : elles sont identiques pour tous les verbes réguliers.",
+    "Mémorise les radicaux irréguliers les plus fréquents, car ils reviennent souvent dans les exercices et les textes.",
+    "Ne confonds pas le futur simple avec « ir a + infinitif » : les deux parlent du futur, mais le premier est une forme verbale à part entière.",
+    "En espagnol, le futur simple sert aussi à exprimer une supposition : « Serán las ocho » peut vouloir dire « Il est sans doute huit heures ».",
+    "Pour réviser, entraîne-toi à partir de l'infinitif puis à ajouter le radical irrégulier seulement quand il existe."
+  ],
+  "miniExamples": [
+    "Mañana estudiaré para el examen.",
+    "Tú llegarás a tiempo si sales pronto.",
+    "Nosotros viajaremos a Madrid el próximo verano.",
+    "¿Qué harás después de clase?",
+    "Ella vendrá mañana con sus amigos.",
+    "Creo que sabré la respuesta en unas horas."
+  ]
+}

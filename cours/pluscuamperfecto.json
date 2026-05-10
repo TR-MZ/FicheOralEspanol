@@ -1,0 +1,40 @@
+{
+  "topicId": "pluscuamperfecto",
+  "title": "Plus-que-parfait",
+  "use": "Le plus-que-parfait sert à exprimer une action antérieure à une autre action passée. Il permet de situer clairement l'ordre des événements dans un récit, un texte ou une narration au lycée.",
+  "formation": [
+    "On forme le plus-que-parfait avec l'auxiliaire haber à l'imparfait + le participe passé du verbe principal.",
+    "L'auxiliaire indique la personne : había, habías, había, habíamos, habíais, habían.",
+    "Les participes réguliers se forment comme au passé composé : -ar -> -ado, -er -> -ido, -ir -> -ido.",
+    "Le participe reste invariable : il ne s'accorde ni en genre ni en nombre.",
+    "On l'emploie souvent avec antes de, ya, todavía no, cuando, después de ou antes de que dans un récit au passé."
+  ],
+  "endings": [
+    {
+      "group": "haber à l'imparfait",
+      "forms": ["había", "habías", "había", "habíamos", "habíais", "habían"]
+    }
+  ],
+  "irregulars": [
+    {
+      "pattern": "participes irréguliers",
+      "verbs": ["hacer: hecho", "ver: visto", "escribir: escrito", "decir: dicho", "poner: puesto", "abrir: abierto", "volver: vuelto", "romper: roto", "morir: muerto", "resolver: resuelto", "descubrir: descubierto", "cubrir: cubierto"],
+      "example": "Cuando empezó la clase, ya habían hecho los ejercicios y habían visto el ejemplo."
+    }
+  ],
+  "tips": [
+    "Repère l'ordre des actions : le plus-que-parfait marque ce qui est arrivé en premier dans le passé.",
+    "Ne confonds pas ce temps avec le pretérito perfecto : ici, on parle toujours d'un passé situé avant un autre passé.",
+    "Après haber, le participe ne change jamais : on dit había hablado, habían comido, había vivido.",
+    "Apprends par cœur les participes irréguliers les plus utiles : hecho, visto, dicho, puesto, escrito, abierto, vuelto, roto, muerto.",
+    "Dans un récit, ce temps aide à éviter toute ambiguïté quand plusieurs actions passées se suivent."
+  ],
+  "miniExamples": [
+    "Cuando llegamos, ellos ya habían salido.",
+    "Yo había estudiado antes del examen.",
+    "Antes de la lluvia, habíamos cerrado las ventanas.",
+    "Ella había hecho la tarea cuando sonó el teléfono.",
+    "Los alumnos habían leído el texto antes de comentarlo.",
+    "Tú ya habías visto esa película."
+  ]
+}

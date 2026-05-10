@@ -1,0 +1,24 @@
+{
+  "id": "imperfecto",
+  "title": "Imparfait de l'indicatif",
+  "rule": "L'imparfait sert à décrire un contexte, une habitude ou une situation en cours dans le passé.",
+  "examples": [
+    "Durante la dictadura, el NO-DO transmitía propaganda.",
+    "Antes, los padres tenían menos permiso de paternidad.",
+    "Roberta vivía en una sociedad muy tradicional."
+  ],
+  "exercises": [
+    { "id": "imperfecto-001", "type": "conjugaison", "prompt": "Conjugue à l'imparfait : El NO-DO _____ (transmitir) propaganda.", "answer": "El NO-DO transmitía propaganda.", "hint": "-ir à l'imparfait : -ía." },
+    { "id": "imperfecto-002", "type": "conjugaison", "prompt": "Conjugue : Antes los jóvenes _____ (vivir) con sus padres.", "answer": "Antes los jóvenes vivían con sus padres.", "hint": "Habitude passée." },
+    { "id": "imperfecto-003", "type": "conjugaison", "prompt": "Conjugue : La mujer _____ (tener) menos derechos.", "answer": "La mujer tenía menos derechos.", "hint": "tener -> tenía." },
+    { "id": "imperfecto-004", "type": "conjugaison", "prompt": "Conjugue : Nosotros _____ (estudiar) la familia tradicional.", "answer": "Nosotros estudiábamos la familia tradicional.", "hint": "-ar : -aba, -abas..." },
+    { "id": "imperfecto-005", "type": "conjugaison", "prompt": "Conjugue : El cartel _____ (parecer) cercano.", "answer": "El cartel parecía cercano.", "hint": "parecer -> parecía." },
+    { "id": "imperfecto-006", "type": "conjugaison", "prompt": "Conjugue : Las mujeres wayuu _____ (tejer) mochilas.", "answer": "Las mujeres wayuu tejían mochilas.", "hint": "Description/habitude." },
+    { "id": "imperfecto-007", "type": "traduction", "prompt": "Traduis : Avant, les pères avaient moins de congé.", "answer": "Antes, los padres tenían menos permiso.", "hint": "Avant = antes, imparfait." },
+    { "id": "imperfecto-008", "type": "conjugaison", "prompt": "Conjugue : En la serie, Roberta _____ (estar) nerviosa.", "answer": "En la serie, Roberta estaba nerviosa.", "hint": "estar à l'imparfait : estaba." },
+    { "id": "imperfecto-009", "type": "conjugaison", "prompt": "Conjugue : Los políticos _____ (querer) persuadir.", "answer": "Los políticos querían persuadir.", "hint": "querer -> quería." },
+    { "id": "imperfecto-010", "type": "choix", "prompt": "Choisis : Cuando era niño, (viví / vivía) en casa de mis padres.", "answer": "Cuando era niño, vivía en casa de mis padres.", "hint": "Situation durable passée." },
+    { "id": "imperfecto-011", "type": "conjugaison", "prompt": "Conjugue : La sociedad _____ (ser) más conservadora.", "answer": "La sociedad era más conservadora.", "hint": "ser à l'imparfait : era." },
+    { "id": "imperfecto-012", "type": "transformation", "prompt": "Mets à l'imparfait : Los alumnos hablan de la IA.", "answer": "Los alumnos hablaban de la IA.", "hint": "-ar à l'imparfait : -aban." }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "condicional",
+  "title": "Conditionnel",
+  "rule": "Le conditionnel sert à exprimer une hypothèse, un conseil poli ou une conséquence imaginaire. Il se forme sur l'infinitif avec les terminaisons -ía, -ías, -ía, -íamos, -íais, -ían.",
+  "examples": [
+    "Sería mejor proteger a los menores.",
+    "España podría ahorrar más agua.",
+    "Yo aconsejaría ver la serie."
+  ],
+  "exercises": [
+    { "id": "condicional-001", "type": "conjugaison", "prompt": "Conjugue au conditionnel : España _____ (poder) ahorrar agua.", "answer": "España podría ahorrar agua.", "hint": "poder -> podría." },
+    { "id": "condicional-002", "type": "conjugaison", "prompt": "Conjugue : Yo _____ (aconsejar) ver la serie.", "answer": "Yo aconsejaría ver la serie.", "hint": "yo : -ía." },
+    { "id": "condicional-003", "type": "conjugaison", "prompt": "Conjugue : Los políticos _____ (deber) ser más claros.", "answer": "Los políticos deberían ser más claros.", "hint": "deberían." },
+    { "id": "condicional-004", "type": "conjugaison", "prompt": "Conjugue : Nosotros _____ (tener) más tiempo para debatir.", "answer": "Nosotros tendríamos más tiempo para debatir.", "hint": "tener -> tendría." },
+    { "id": "condicional-005", "type": "conjugaison", "prompt": "Conjugue : La ley _____ (proteger) mejor a las víctimas.", "answer": "La ley protegería mejor a las víctimas.", "hint": "infinitif + -ía." },
+    { "id": "condicional-006", "type": "conjugaison", "prompt": "Conjugue : Tú _____ (hacer) una buena presentación.", "answer": "Tú harías una buena presentación.", "hint": "hacer -> harías." },
+    { "id": "condicional-007", "type": "traduction", "prompt": "Traduis : Ce serait intéressant de comparer les deux documents.", "answer": "Sería interesante comparar los dos documentos.", "hint": "Ce serait = sería." },
+    { "id": "condicional-008", "type": "conjugaison", "prompt": "Conjugue : Las redes _____ (cambiar) la educación.", "answer": "Las redes cambiarían la educación.", "hint": "ellas : -ían." },
+    { "id": "condicional-009", "type": "conjugaison", "prompt": "Conjugue : Vosotros _____ (ver) el problema.", "answer": "Vosotros veríais el problema.", "hint": "vosotros : -íais." },
+    { "id": "condicional-010", "type": "choix", "prompt": "Choisis : Si tuviera tiempo, (vería / vi) la serie.", "answer": "Si tuviera tiempo, vería la serie.", "hint": "Si + imparfait du subjonctif -> conditionnel." },
+    { "id": "condicional-011", "type": "conjugaison", "prompt": "Conjugue : El Estado _____ (dar) más ayudas.", "answer": "El Estado daría más ayudas.", "hint": "dar -> daría." },
+    { "id": "condicional-012", "type": "transformation", "prompt": "Mets au conditionnel : Es necesario cuidar el agua.", "answer": "Sería necesario cuidar el agua.", "hint": "es -> sería." }
+  ]
+}

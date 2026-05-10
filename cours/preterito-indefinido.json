@@ -1,0 +1,63 @@
+{
+  "topicId": "preterito-indefinido",
+  "title": "Pretérito indefinido",
+  "use": "Le pretérito indefinido sert à raconter des actions terminées dans le passé, à situer des événements dans une chronologie, à parler d'une suite d'actions passées et à présenter des faits ponctuels. En espagnol, il est très fréquent dans les récits, les biographies et les témoignages.",
+  "formation": [
+    "On prend le radical du verbe à l'infinitif et on ajoute les terminaisons du pretérito indefinido.",
+    "Les verbes en -ar, -er et -ir ont des terminaisons différentes, mais le temps exprime toujours une action achevée.",
+    "Les accents servent souvent à marquer la bonne prononciation dans certaines formes du singulier et de la 3e personne du singulier.",
+    "Pour les verbes réguliers, les terminaisons sont stables et il suffit d'apprendre les trois modèles.",
+    "Les verbes irréguliers sont nombreux, surtout dans les formes très fréquentes comme decir, hacer, ir, ser ou tener."
+  ],
+  "endings": [
+    {
+      "group": "-ar",
+      "forms": ["-é", "-aste", "-ó", "-amos", "-asteis", "-aron"]
+    },
+    {
+      "group": "-er",
+      "forms": ["-í", "-iste", "-ió", "-imos", "-isteis", "-ieron"]
+    },
+    {
+      "group": "-ir",
+      "forms": ["-í", "-iste", "-ió", "-imos", "-isteis", "-ieron"]
+    }
+  ],
+  "irregulars": [
+    {
+      "pattern": "Verbes forts avec radical irrégulier",
+      "verbs": ["tener", "estar", "poder", "poner", "saber", "venir", "querer", "hacer", "decir", "traer"],
+      "example": "Tuve mucho trabajo, estuve en casa y pude terminar la tarea."
+    },
+    {
+      "pattern": "Verbes à changement orthographique pour conserver le son",
+      "verbs": ["buscar", "llegar", "pagar", "empezar", "comenzar", "coger"],
+      "example": "Busqué el libro, llegué tarde y empecé a estudiar."
+    },
+    {
+      "pattern": "Verbes avec forme irrégulière à la 3e personne du singulier et du pluriel",
+      "verbs": ["leer", "oir", "caer", "construir", "huir", "creer"],
+      "example": "Leyó el mensaje, oyeron la noticia y construyeron una casa."
+    },
+    {
+      "pattern": "Verbes totalement irréguliers très fréquents",
+      "verbs": ["ir", "ser"],
+      "example": "Fui al cine y fue una experiencia genial."
+    }
+  ],
+  "tips": [
+    "Le pretérito indefinido sert souvent à répondre à la question « qu'est-ce qui s'est passé ? ».",
+    "La 3e personne du singulier est très importante : beaucoup de récits l'utilisent pour raconter des faits.",
+    "Apprends d'abord les verbes très fréquents : tener, hacer, ir, ser, poder, decir et venir.",
+    "Ne confonds pas le pretérito indefinido avec l'imparfait : l'indefinido présente l'action comme terminée.",
+    "Les verbes avec changement orthographique gardent surtout le son, pas la règle de base de la conjugaison."
+  ],
+  "miniExamples": [
+    "Ayer estudié para el examen.",
+    "El sábado fuimos al museo.",
+    "Ella escribió un correo muy claro.",
+    "Mis amigos llegaron tarde a clase.",
+    "La película empezó a las ocho.",
+    "Yo dije la verdad y ellos comprendieron la situación."
+  ]
+}

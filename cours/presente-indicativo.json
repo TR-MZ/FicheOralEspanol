@@ -1,0 +1,73 @@
+{
+  "topicId": "presente-indicativo",
+  "title": "Présent de l'indicatif",
+  "use": "Le présent de l'indicatif sert à exprimer une action qui se passe maintenant, une vérité générale, une habitude, un commentaire ou une description. À l'oral, il est très utile pour présenter un document, donner son avis et expliquer une situation actuelle.",
+  "formation": [
+    "On part du radical du verbe à l'infinitif et on ajoute les terminaisons du présent.",
+    "Les verbes en -ar, -er et -ir n'ont pas les mêmes terminaisons.",
+    "Certains verbes changent de radical au présent : e -> ie, o -> ue, e -> i.",
+    "D'autres verbes ont des formes irrégulières surtout à la première personne du singulier.",
+    "En espagnol, on n'emploie pas toujours le pronom sujet car la terminaison du verbe suffit souvent."
+  ],
+  "endings": [
+    {
+      "group": "-ar",
+      "forms": ["-o", "-as", "-a", "-amos", "-áis", "-an"]
+    },
+    {
+      "group": "-er",
+      "forms": ["-o", "-es", "-e", "-emos", "-éis", "-en"]
+    },
+    {
+      "group": "-ir",
+      "forms": ["-o", "-es", "-e", "-imos", "-ís", "-en"]
+    }
+  ],
+  "irregulars": [
+    {
+      "pattern": "Verbes totalement irréguliers très fréquents",
+      "verbs": ["ser", "ir", "estar", "tener", "hacer", "venir"],
+      "example": "Soy alumno, voy al instituto y tengo clase de español."
+    },
+    {
+      "pattern": "Verbes à alternance vocalique e -> ie",
+      "verbs": ["pensar", "querer", "cerrar", "entender", "preferir"],
+      "example": "Pienso que el texto es claro."
+    },
+    {
+      "pattern": "Verbes à alternance vocalique o -> ue",
+      "verbs": ["poder", "dormir", "volver", "contar", "encontrar"],
+      "example": "No puedo salir hoy."
+    },
+    {
+      "pattern": "Verbes à alternance vocalique e -> i",
+      "verbs": ["pedir", "servir", "repetir", "seguir", "decir"],
+      "example": "Ella pide ayuda con el ejercicio."
+    },
+    {
+      "pattern": "Verbes en -go à la première personne du singulier",
+      "verbs": ["tener", "poner", "salir", "valer", "traer", "decir", "hacer"],
+      "example": "Yo tengo razón y pongo un ejemplo."
+    },
+    {
+      "pattern": "Verbes à changement orthographique pour garder le son",
+      "verbs": ["buscar", "empezar", "pagar", "conocer", "seguir"],
+      "example": "Yo busco información y empiezo la tarea."
+    }
+  ],
+  "tips": [
+    "Pour l'oral, commence souvent par une phrase simple au présent : « El texto trata de... », « La imagen muestra... », « Creo que... ».",
+    "Attention aux personnes du singulier et du pluriel : la terminaison change beaucoup entre yo, tú, él/ella et nosotros.",
+    "Apprends bien la forme yo des verbes fréquents, car elle est souvent irrégulière.",
+    "Retrouve les verbes à changement de radical dans les textes : ils sont très fréquents dans les sujets de lycée.",
+    "En présentation de document, le présent sert surtout à décrire ce que l'on voit, ce que le texte dit et ce que cela signifie."
+  ],
+  "miniExamples": [
+    "España tiene muchas lenguas cooficiales.",
+    "Yo pienso que esta idea es importante.",
+    "Los jóvenes usan mucho el móvil.",
+    "La imagen muestra una escena de la vida cotidiana.",
+    "Nosotros vivimos en una sociedad digital.",
+    "Ella pide ayuda y nosotros respondemos."
+  ]
+}

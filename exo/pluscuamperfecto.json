@@ -1,0 +1,24 @@
+{
+  "id": "pluscuamperfecto",
+  "title": "Plus-que-parfait",
+  "rule": "Le plus-que-parfait se forme avec haber à l'imparfait + participe. Il sert à parler d'une action antérieure à une autre action passée.",
+  "examples": [
+    "La sociedad ya había cambiado antes de la ley.",
+    "Los alumnos habían visto el documento antes del debate.",
+    "Si no hubieran manipulado la imagen, el mensaje habría sido distinto."
+  ],
+  "exercises": [
+    { "id": "pluscuamperfecto-001", "type": "conjugaison", "prompt": "Complète : Los alumnos ya _____ (ver) el cartel.", "answer": "Los alumnos ya habían visto el cartel.", "hint": "haber imparfait + participe." },
+    { "id": "pluscuamperfecto-002", "type": "conjugaison", "prompt": "Complète : Yo _____ (leer) el artículo antes de clase.", "answer": "Yo había leído el artículo antes de clase.", "hint": "leer -> leído." },
+    { "id": "pluscuamperfecto-003", "type": "conjugaison", "prompt": "Complète : La ley _____ (cambiar) el debate antes de la sentencia.", "answer": "La ley había cambiado el debate antes de la sentencia.", "hint": "había + participe." },
+    { "id": "pluscuamperfecto-004", "type": "conjugaison", "prompt": "Complète : Nosotros _____ (hacer) el resumen.", "answer": "Nosotros habíamos hecho el resumen.", "hint": "hacer -> hecho." },
+    { "id": "pluscuamperfecto-005", "type": "conjugaison", "prompt": "Complète : La imagen ya _____ (ser) manipulada.", "answer": "La imagen ya había sido manipulada.", "hint": "ser -> sido." },
+    { "id": "pluscuamperfecto-006", "type": "conjugaison", "prompt": "Complète : Ellos _____ (escribir) una respuesta oral.", "answer": "Ellos habían escrito una respuesta oral.", "hint": "escribir -> escrito." },
+    { "id": "pluscuamperfecto-007", "type": "traduction", "prompt": "Traduis : Nous avions étudié le document avant le débat.", "answer": "Habíamos estudiado el documento antes del debate.", "hint": "Nous avions = habíamos." },
+    { "id": "pluscuamperfecto-008", "type": "conjugaison", "prompt": "Complète : España _____ (sufrir) sequías antes.", "answer": "España había sufrido sequías antes.", "hint": "sufrir -> sufrido." },
+    { "id": "pluscuamperfecto-009", "type": "conjugaison", "prompt": "Complète : Tú _____ (comprender) la regla.", "answer": "Tú habías comprendido la regla.", "hint": "tú habías." },
+    { "id": "pluscuamperfecto-010", "type": "choix", "prompt": "Choisis : Antes del examen, los alumnos (habían repasado / repasaron) la gramática.", "answer": "Antes del examen, los alumnos habían repasado la gramática.", "hint": "Action antérieure à une autre action passée." },
+    { "id": "pluscuamperfecto-011", "type": "conjugaison", "prompt": "Complète : Las familias _____ (recibir) menos ayudas.", "answer": "Las familias habían recibido menos ayudas.", "hint": "recibir -> recibido." },
+    { "id": "pluscuamperfecto-012", "type": "transformation", "prompt": "Mets au plus-que-parfait : El periodista publica el artículo.", "answer": "El periodista había publicado el artículo.", "hint": "había + publicado." }
+  ]
+}

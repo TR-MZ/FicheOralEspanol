@@ -214,6 +214,7 @@ const chapterNav = document.querySelector("#chapterNav");
 const chapterView = document.querySelector("#chapterView");
 const documentView = document.querySelector("#documentView");
 const repassosView = document.querySelector("#repassosView");
+const grammarView = document.querySelector("#grammarView");
 const statusText = document.querySelector("#statusText");
 const homeButton = document.querySelector("#homeButton");
 const imageLightbox = document.querySelector("#imageLightbox");
@@ -298,6 +299,7 @@ function renderOrale() {
   chapterView.classList.add("hidden");
   documentView.classList.add("hidden");
   if (typeof repassosView !== "undefined") repassosView.classList.add("hidden");
+  if (typeof grammarView !== "undefined") grammarView.classList.add("hidden");
   oralView.classList.remove("hidden");
   
   statusText.textContent = "Question fiche orale";
@@ -312,6 +314,7 @@ function renderRepassos() {
   chapterView.classList.add("hidden");
   documentView.classList.add("hidden");
   if (typeof oralView !== 'undefined') oralView.classList.add("hidden");
+  if (typeof grammarView !== "undefined") grammarView.classList.add("hidden");
   if (typeof repassosView !== "undefined") {
     repassosView.classList.remove("hidden");
     if (typeof buildRepassosHtml === "function") {
@@ -339,6 +342,7 @@ let flashcardIndex = 0;
 let flashcardFlipped = false;
 let flashcardKnown = 0;
 let flashcardUnknown = 0;
+let flashcardsBaseTotal = 0;
 let flashcardPointerId = null;
 let flashcardPointerStartX = 0;
 let flashcardPointerDeltaX = 0;
@@ -628,6 +632,7 @@ function writeFlashcardsCache() {
         flipped: flashcardFlipped,
         known: flashcardKnown,
         unknown: flashcardUnknown,
+        total: flashcardsBaseTotal,
       }),
     );
   } catch (error) {
@@ -666,6 +671,7 @@ function restoreFlashcardsFromCache(deck) {
   flashcardFlipped = Boolean(cached.flipped) && flashcardIndex < flashcards.length;
   flashcardKnown = Math.max(0, Number(cached.known) || 0);
   flashcardUnknown = Math.max(0, Number(cached.unknown) || 0);
+  flashcardsBaseTotal = Math.max(restoredCards.length, Number(cached.total) || 0);
   return true;
 }
 
@@ -703,6 +709,7 @@ function buildVocabularyDeck() {
 function ensureFlashcards() {
   if (flashcards.length) return;
   const deck = buildVocabularyDeck();
+  flashcardsBaseTotal = deck.length;
   if (restoreFlashcardsFromCache(deck)) return;
 
   flashcards = shuffle(deck);
@@ -714,7 +721,9 @@ function ensureFlashcards() {
 }
 
 function resetFlashcards() {
-  flashcards = shuffle(buildVocabularyDeck());
+  const deck = buildVocabularyDeck();
+  flashcardsBaseTotal = deck.length;
+  flashcards = shuffle(deck);
   flashcardIndex = 0;
   flashcardFlipped = false;
   flashcardKnown = 0;
@@ -727,18 +736,23 @@ function currentFlashcard() {
 }
 
 function flashcardProgressPercent() {
-  if (!flashcards.length) return 0;
-  return Math.round((flashcardIndex / flashcards.length) * 100);
+  if (!flashcardsBaseTotal) return 0;
+  return Math.round((flashcardKnown / flashcardsBaseTotal) * 100);
 }
 
 function classifyFlashcard(direction) {
   const card = currentFlashcard();
   if (!card) return;
 
-  if (direction === "known") flashcardKnown += 1;
-  else flashcardUnknown += 1;
+  if (direction === "known") {
+    flashcardKnown += 1;
+    flashcardIndex += 1;
+  } else {
+    flashcardUnknown += 1;
+    flashcards.push(card);
+    flashcardIndex += 1;
+  }
 
-  flashcardIndex += 1;
   flashcardFlipped = false;
   writeFlashcardsCache();
 }
@@ -816,6 +830,7 @@ function renderHome() {
   documentView.classList.add("hidden");
   if (typeof oralView !== 'undefined') oralView.classList.add("hidden");
   if (typeof repassosView !== "undefined") repassosView.classList.add("hidden");
+  if (typeof grammarView !== "undefined") grammarView.classList.add("hidden");
   statusText.textContent = "Selectionne un chapitre";
   renderNav();
 
@@ -843,6 +858,12 @@ function renderHome() {
         <p>Prépare la réponse orale avec une entrée simple et rapide.</p>
         <span class="cta-line">Commencer -&gt;</span>
       </button>
+      <button class="feature-card" type="button" data-home-action="grammaire">
+        <span class="pill">Grammaire</span>
+        <h2>Reviser les points de grammaire</h2>
+        <p>Exercices par thème à partir des repassos de l'année.</p>
+        <span class="cta-line">S'entraîner -&gt;</span>
+      </button>
     </div>
     <div class="chapter-grid">
       ${chapters
@@ -869,6 +890,7 @@ function renderFlashcards() {
   documentView.classList.add("hidden");
   if (typeof oralView !== 'undefined') oralView.classList.add("hidden");
   if (typeof repassosView !== "undefined") repassosView.classList.add("hidden");
+  if (typeof grammarView !== "undefined") grammarView.classList.add("hidden");
   statusText.textContent = "Reviser le vocabulaire";
   renderNav();
 
@@ -892,7 +914,7 @@ function renderFlashcards() {
       <div class="flashcards-stats">
         <div class="note-box">
           <h3>Progression</h3>
-          <p>${Math.min(flashcardIndex, flashcards.length)} / ${flashcards.length} cartes</p>
+          <p>${flashcardKnown} / ${flashcardsBaseTotal} cartes sues</p>
         </div>
         <div class="note-box">
           <h3>Je sais</h3>
@@ -913,8 +935,8 @@ function renderFlashcards() {
           ? `
             <div class="flashcards-finished">
               <span class="pill">Session terminee</span>
-              <h2>Tu as revu ${flashcards.length} mots.</h2>
-              <p>${flashcardKnown} connus, ${flashcardUnknown} a revoir. Tu peux remelanger le paquet et recommencer.</p>
+              <h2>Tu as revu ${flashcardsBaseTotal} mots.</h2>
+              <p>${flashcardKnown} connus, ${flashcardUnknown} passages a revoir. Les cartes ratees sont revenues plus tard dans la session.</p>
               <div class="flashcards-actions">
                 <button class="nav-button" type="button" data-reset-flashcards>Recommencer</button>
                 <button class="nav-button" type="button" data-home>Retour accueil</button>
@@ -962,6 +984,7 @@ function renderRepassos() {
   chapterView.classList.add("hidden");
   documentView.classList.add("hidden");
   if (typeof oralView !== 'undefined') oralView.classList.add("hidden");
+  if (typeof grammarView !== "undefined") grammarView.classList.add("hidden");
   if (typeof repassosView !== "undefined") repassosView.classList.remove("hidden");
 
   statusText.textContent = "Repassos";
@@ -980,6 +1003,30 @@ function renderRepassos() {
   `;
 }
 
+function renderGrammar() {
+  activeDocumentId = null;
+  chapterView.classList.add("hidden");
+  documentView.classList.add("hidden");
+  if (typeof oralView !== "undefined") oralView.classList.add("hidden");
+  if (typeof repassosView !== "undefined") repassosView.classList.add("hidden");
+  if (typeof grammarView !== "undefined") grammarView.classList.remove("hidden");
+
+  statusText.textContent = "Grammaire";
+  renderNav();
+
+  if (typeof buildGrammarHtml === "function") {
+    grammarView.innerHTML = buildGrammarHtml();
+    return;
+  }
+
+  grammarView.innerHTML = `
+    <div class="note-box">
+      <h3>Grammaire indisponible</h3>
+      <p>Le module grammaire.js n'a pas encore ete charge.</p>
+    </div>
+  `;
+}
+
 function renderChapter(chapterId = activeChapterId) {
   activeChapterId = chapterId;
   activeDocumentId = null;
@@ -989,6 +1036,7 @@ function renderChapter(chapterId = activeChapterId) {
   documentView.classList.add("hidden");
   if (typeof oralView !== 'undefined') oralView.classList.add("hidden");
   if (typeof repassosView !== "undefined") repassosView.classList.add("hidden");
+  if (typeof grammarView !== "undefined") grammarView.classList.add("hidden");
   statusText.textContent = `${chapter.number}. ${chapter.title}`;
   renderNav();
 
@@ -1050,6 +1098,7 @@ function renderDocument(chapterId = activeChapterId, documentId) {
   documentView.classList.remove("hidden");
   if (typeof oralView !== 'undefined') oralView.classList.add("hidden");
   if (typeof repassosView !== "undefined") repassosView.classList.add("hidden");
+  if (typeof grammarView !== "undefined") grammarView.classList.add("hidden");
   statusText.textContent = `${chapter.number}. ${chapter.title} · ${index + 1}/${chapter.documents.length}`;
   renderNav();
 
@@ -1188,6 +1237,10 @@ function readHash() {
     renderOrale();
     return;
   }
+  if (chapterId === "grammaire") {
+    renderGrammar();
+    return;
+  }
   const chapterExists = chapters.some((chapter) => chapter.id === chapterId);
   if (!chapterExists) {
     renderHome();
@@ -1236,6 +1289,10 @@ document.addEventListener("click", (event) => {
     }
     if (homeActionTarget.dataset.homeAction === "question-orale") {
       setHash("question-orale");
+      return;
+    }
+    if (homeActionTarget.dataset.homeAction === "grammaire") {
+      setHash("grammaire");
       return;
     }
     const chapter = getChapter();

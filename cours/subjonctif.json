@@ -1,0 +1,58 @@
+{
+  "topicId": "subjonctif",
+  "title": "Subjonctif présent",
+  "use": "Le subjonctif présent sert à exprimer une volonté, une nécessité, un doute, une émotion, un jugement ou une possibilité dans une proposition dépendante. On l'emploie souvent après des verbes comme querer, esperar, dudar, temer, alegrarse ou il faut que.",
+  "formation": [
+    "On part du présent de l'indicatif : je prends la base de la forme yo, je retire la terminaison -o, puis j'ajoute les terminaisons du subjonctif.",
+    "Pour les verbes réguliers en -ar, on obtient des formes en -e, -es, -e, -emos, -éis, -en.",
+    "Pour les verbes réguliers en -er et en -ir, on obtient des formes en -a, -as, -a, -amos, -áis, -an.",
+    "Quand le verbe est irrégulier au présent de l'indicatif, la base du subjonctif peut aussi être irrégulière : il faut apprendre la forme de base.",
+    "Beaucoup de verbes gardent les changements de radical du présent, surtout pour les personnes qui emploient la même base dans tout le subjonctif."
+  ],
+  "endings": [
+    {
+      "group": "-ar",
+      "forms": ["-e", "-es", "-e", "-emos", "-éis", "-en"]
+    },
+    {
+      "group": "-er",
+      "forms": ["-a", "-as", "-a", "-amos", "-áis", "-an"]
+    },
+    {
+      "group": "-ir",
+      "forms": ["-a", "-as", "-a", "-amos", "-áis", "-an"]
+    }
+  ],
+  "irregulars": [
+    {
+      "pattern": "Verbes très fréquents à base irrégulière",
+      "verbs": ["ser: sea", "ir: vaya", "haber: haya", "saber: sepa", "estar: esté", "dar: dé"],
+      "example": "Es importante que ella sea puntual y que yo dé una respuesta clara."
+    },
+    {
+      "pattern": "Verbes avec voyelles ou consonnes irrégulières au présent",
+      "verbs": ["tener: tenga", "venir: venga", "decir: diga", "hacer: haga", "poner: ponga", "salir: salga"],
+      "example": "Dudo que tengan tiempo y espero que venga pronto."
+    },
+    {
+      "pattern": "Changements fréquents de radical",
+      "verbs": ["pensar: piense", "querer: quiera", "poder: pueda", "dormir: duerma", "pedir: pida", "seguir: siga"],
+      "example": "Quiero que pienses bien la respuesta."
+    }
+  ],
+  "tips": [
+    "Après une volonté ou une demande, on met souvent le subjonctif : quiero que, prefiero que, te pido que.",
+    "Après le doute ou la négation, le subjonctif est très fréquent : dudo que, no creo que, es posible que.",
+    "Après une émotion ou un jugement, pense au subjonctif : me alegra que, siento que, es una pena que.",
+    "Pour former le subjonctif, pars de la forme yo du présent de l'indicatif : hablo -> hable, como -> coma, vivo -> viva.",
+    "Les terminaisons sont inversées par rapport à l'indicatif entre les groupes -ar et -er/-ir."
+  ],
+  "miniExamples": [
+    "Quiero que vengas conmigo.",
+    "No creo que sea difícil.",
+    "Es normal que tengas dudas.",
+    "Me alegra que estés aquí.",
+    "Es posible que llueva mañana.",
+    "Espero que nos veamos pronto."
+  ]
+}

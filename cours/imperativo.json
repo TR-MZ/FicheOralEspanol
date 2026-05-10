@@ -1,0 +1,68 @@
+{
+  "topicId": "imperativo",
+  "title": "Impératif",
+  "use": "On utilise l'impératif pour donner un ordre, un conseil, une consigne ou une invitation. En espagnol, il sert surtout à parler à quelqu'un directement.",
+  "formation": [
+    "Pour le présent affirmatif, la forme de base dépend de la personne: tú, usted, nosotros, vosotros, ustedes.",
+    "Pour tú affirmatif, on prend souvent la 3e personne du singulier du présent de l'indicatif: habla, come, vive.",
+    "Pour nosotros, on utilise la forme du subjonctif présent: hablemos, comamos, vivamos.",
+    "Pour vosotros, on enlève le -r de l'infinitif et on ajoute -d: hablad, comed, vivid.",
+    "Pour ustedes, on utilise le subjonctif présent: hablen, coman, vivan.",
+    "L'impératif négatif se construit avec no + subjonctif présent: no hables, no comas, no vivas.",
+    "À l'écrit et à l'oral, le pronom se colle à la fin de l'impératif affirmatif: dime, levántate, compradlo."
+  ],
+  "endings": [
+    {
+      "group": "tú affirmatif",
+      "forms": [
+        "3e personne du présent"
+      ]
+    }
+  ],
+  "irregulars": [
+    {
+      "pattern": "tú affirmatif irrégulier",
+      "verbs": [
+        "decir: di",
+        "hacer: haz",
+        "ir: ve",
+        "poner: pon",
+        "salir: sal",
+        "ser: sé",
+        "tener: ten",
+        "venir: ven",
+        "venirse: vete"
+      ],
+      "example": "Di la verdad."
+    },
+    {
+      "pattern": "négatif = subjonctif",
+      "verbs": [
+        "decir: no digas",
+        "hacer: no hagas",
+        "ir: no vayas",
+        "poner: no pongas",
+        "salir: no salgas",
+        "ser: no seas",
+        "tener: no tengas",
+        "venir: no vengas"
+      ],
+      "example": "No digas mentiras."
+    }
+  ],
+  "tips": [
+    "Le négatif n'utilise pas l'impératif affirmatif: il prend toujours le subjonctif présent.",
+    "Pour tú, mémorise surtout les formes très fréquentes: di, haz, ve, pon, sal, sé, ten, ven.",
+    "Avec les pronoms, l'accent écrit est souvent nécessaire: dime, cuéntame, escríbelo.",
+    "Le vouvoiement est plus poli: use usted et ustedes avec le subjonctif présent.",
+    "Pour un conseil à plusieurs personnes, nosotros sert souvent à proposer une action commune: vamos, estudiemos, comamos."
+  ],
+  "miniExamples": [
+    "¡Habla más despacio!",
+    "¡No corras!",
+    "¡Ven aquí!",
+    "¡Decid la verdad!",
+    "¡No salgas tarde!",
+    "¡Comamos juntos!"
+  ]
+}

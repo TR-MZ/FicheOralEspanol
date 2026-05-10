@@ -1,0 +1,24 @@
+{
+  "id": "preterito-perfecto",
+  "title": "Pretérito perfecto",
+  "rule": "Le pretérito perfecto se forme avec haber au présent + participe passé. Il sert souvent à parler d'une expérience ou d'un fait récent lié au présent.",
+  "examples": [
+    "Hoy hemos estudiado la ley de familia.",
+    "He aprendido una palabra en euskera.",
+    "Los alumnos han debatido sobre la IA."
+  ],
+  "exercises": [
+    { "id": "perfecto-001", "type": "conjugaison", "prompt": "Complète : Hoy nosotros _____ (estudiar) el cambio climático.", "answer": "Hoy nosotros hemos estudiado el cambio climático.", "hint": "haber + participe : hemos estudiado." },
+    { "id": "perfecto-002", "type": "conjugaison", "prompt": "Complète : Yo _____ (aprender) la palabra agur.", "answer": "Yo he aprendido la palabra agur.", "hint": "yo he + participe." },
+    { "id": "perfecto-003", "type": "conjugaison", "prompt": "Complète : Los alumnos _____ (ver) un cartel político.", "answer": "Los alumnos han visto un cartel político.", "hint": "ver -> visto." },
+    { "id": "perfecto-004", "type": "conjugaison", "prompt": "Complète : Tú _____ (escribir) una respuesta oral.", "answer": "Tú has escrito una respuesta oral.", "hint": "escribir -> escrito." },
+    { "id": "perfecto-005", "type": "conjugaison", "prompt": "Complète : La profesora _____ (explicar) el subjuntivo.", "answer": "La profesora ha explicado el subjuntivo.", "hint": "ha + participe." },
+    { "id": "perfecto-006", "type": "conjugaison", "prompt": "Complète : ¿Vosotros _____ (comprender) el documento?", "answer": "¿Vosotros habéis comprendido el documento?", "hint": "vosotros habéis." },
+    { "id": "perfecto-007", "type": "traduction", "prompt": "Traduis : Nous avons parlé des langues coofficielles.", "answer": "Hemos hablado de las lenguas cooficiales.", "hint": "parler de = hablar de." },
+    { "id": "perfecto-008", "type": "conjugaison", "prompt": "Complète : Ellos _____ (hacer) un debate sobre las redes.", "answer": "Ellos han hecho un debate sobre las redes.", "hint": "hacer -> hecho." },
+    { "id": "perfecto-009", "type": "conjugaison", "prompt": "Complète : La sociedad _____ (cambiar) mucho.", "answer": "La sociedad ha cambiado mucho.", "hint": "ha + cambiado." },
+    { "id": "perfecto-010", "type": "transformation", "prompt": "Passe au pretérito perfecto : Estudiamos el NO-DO.", "answer": "Hemos estudiado el NO-DO.", "hint": "Garde la personne nous." },
+    { "id": "perfecto-011", "type": "conjugaison", "prompt": "Complète : María _____ (abrir) una cuenta en una red social.", "answer": "María ha abierto una cuenta en una red social.", "hint": "abrir -> abierto." },
+    { "id": "perfecto-012", "type": "choix", "prompt": "Choisis : Este año España (ha sufrido / sufrió) sequías importantes.", "answer": "Este año España ha sufrido sequías importantes.", "hint": "Este año garde un lien avec le présent." }
+  ]
+}

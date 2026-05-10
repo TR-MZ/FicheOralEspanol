@@ -1,0 +1,56 @@
+{
+  "topicId": "subjonctif-imparfait",
+  "title": "Imparfait du subjonctif",
+  "use": "L'imparfait du subjonctif sert à exprimer une action incertaine, hypothétique, souhaitée ou dépendante d'un verbe au passé. On l'utilise aussi dans des phrases avec si pour parler d'une hypothèse irréelle, et avec como si pour comparer une situation imaginaire ou non réelle.",
+  "formation": [
+    "On part de la 3e personne du pluriel du passé simple, puis on enlève -ron : hablaron -> hablara / hablasen.",
+    "La forme en -ra et la forme en -se sont toutes les deux correctes : elles ont le même sens.",
+    "On ajoute ensuite les terminaisons selon le modèle choisi : -ra, -ras, -ra, -ramos, -rais, -ran ou -se, -ses, -se, -semos, -seis, -sen.",
+    "Les verbes réguliers gardent leur radical, mais les verbes irréguliers du passé simple gardent aussi leur base irrégulière dans cet imparfait du subjonctif.",
+    "À l'oral et dans beaucoup de textes, la forme en -ra est la plus courante."
+  ],
+  "endings": [
+    {
+      "group": "forme en -ra",
+      "forms": ["-ra", "-ras", "-ra", "-ramos", "-rais", "-ran"]
+    },
+    {
+      "group": "forme en -se",
+      "forms": ["-se", "-ses", "-se", "-semos", "-seis", "-sen"]
+    }
+  ],
+  "irregulars": [
+    {
+      "pattern": "Bases irrégulières fréquentes",
+      "verbs": [
+        "ser/ir: fuera",
+        "estar: estuviera",
+        "tener: tuviera",
+        "venir: viniera",
+        "poder: pudiera",
+        "poner: pusiera",
+        "decir: dijera",
+        "hacer: hiciera",
+        "saber: supiera",
+        "querer: quisiera",
+        "haber: hubiera"
+      ],
+      "example": "Si fuera más fácil, lo haríamos hoy."
+    }
+  ],
+  "tips": [
+    "Avec si, on emploie l'imparfait du subjonctif pour une hypothèse irréelle ou peu probable : si tuviera tiempo, viajaría más.",
+    "Avec como si, on l'utilise après un verbe ou une expression qui montre une comparaison imaginaire : habla como si supiera todo.",
+    "Ne confonds pas le subjonctif imparfait avec le conditionnel : en français, on pense souvent à « si + imparfait » / « conditionnel ».",
+    "La forme en -ra est très fréquente, mais il faut reconnaître aussi la forme en -se dans les textes.",
+    "Pour bien l'apprendre, retiens surtout les verbes très fréquents et leurs bases irrégulières."
+  ],
+  "miniExamples": [
+    "Si tuviera dinero, compraría un coche nuevo.",
+    "Si fuera tú, aceptaría la propuesta.",
+    "Quería que vinieras a la fiesta.",
+    "Hablaba como si conociera el secreto.",
+    "Era importante que estudiáramos más.",
+    "Ojalá pudiera ayudarle."
+  ]
+}

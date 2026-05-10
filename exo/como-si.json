@@ -1,0 +1,266 @@
+{
+  "id": "como-si",
+  "title": "Como si + subjonctif",
+  "rule": "Con \"como si\", on exprime souvent une comparaison irréelle ou hypothétique. On emploie normalement l'imparfait du subjonctif pour une situation présente ou future imaginaire, et le plus-que-parfait du subjonctif pour une situation passée irréelle. Le verbe principal peut être au présent, au passé ou à l'imparfait.",
+  "examples": [
+    {
+      "sentence": "Habla como si fuera un experto en propaganda.",
+      "meaning": "Présent imaginaire"
+    },
+    {
+      "sentence": "Miraban el cartel como si hubieran visto una verdad oculta.",
+      "meaning": "Passé irréel"
+    },
+    {
+      "sentence": "El político sonreía como si no le importara la crisis.",
+      "meaning": "Comparaison fictive"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "como-si-001",
+      "type": "conjugaison",
+      "prompt": "Conjugue le verbe entre parenthèses : Ella hablaba como si (ser) ______ la presidenta.",
+      "answer": "fuera",
+      "hint": "Imparfait du subjonctif."
+    },
+    {
+      "id": "como-si-002",
+      "type": "conjugaison",
+      "prompt": "Conjugue le verbe entre parenthèses : El cartel parecía como si (salir) ______ de una guerra.",
+      "answer": "saliera",
+      "hint": "Imparfait du subjonctif."
+    },
+    {
+      "id": "como-si-003",
+      "type": "conjugaison",
+      "prompt": "Conjugue le verbe entre parenthèses : Nos miraban como si nunca (ver) ______ un anuncio falso.",
+      "answer": "hubiéramos visto",
+      "hint": "Plus-que-parfait du subjonctif."
+    },
+    {
+      "id": "como-si-004",
+      "type": "conjugaison",
+      "prompt": "Conjugue le verbe entre parenthèses : El influencer actuaba como si todo (estar) ______ perfecto.",
+      "answer": "estuviera",
+      "hint": "Imparfait du subjonctif."
+    },
+    {
+      "id": "como-si-005",
+      "type": "conjugaison",
+      "prompt": "Conjugue le verbe entre parenthèses : Hablaba como si ya (ganar) ______ la campaña.",
+      "answer": "hubiera ganado",
+      "hint": "Plus-que-parfait du subjonctif."
+    },
+    {
+      "id": "como-si-006",
+      "type": "conjugaison",
+      "prompt": "Conjugue le verbe entre parenthèses : La imagen brillaba como si (ser) ______ real.",
+      "answer": "fuera",
+      "hint": "Imparfait du subjonctif."
+    },
+    {
+      "id": "como-si-007",
+      "type": "conjugaison",
+      "prompt": "Conjugue le verbe entre parenthèses : Nos trataron como si no (tener) ______ opinión.",
+      "answer": "tuviéramos",
+      "hint": "Imparfait du subjonctif."
+    },
+    {
+      "id": "como-si-008",
+      "type": "conjugaison",
+      "prompt": "Conjugue le verbe entre parenthèses : El partido hablaba como si nunca (mentir) ______.",
+      "answer": "hubiera mentido",
+      "hint": "Plus-que-parfait du subjonctif."
+    },
+    {
+      "id": "como-si-009",
+      "type": "conjugaison",
+      "prompt": "Conjugue le verbe entre parenthèses : La multitud gritaba como si (llegar) ______ un héroe.",
+      "answer": "llegara",
+      "hint": "Imparfait du subjonctif."
+    },
+    {
+      "id": "como-si-010",
+      "type": "conjugaison",
+      "prompt": "Conjugue le verbe entre parenthèses : Comentó la noticia como si la (leer) ______ antes.",
+      "answer": "hubiera leído",
+      "hint": "Plus-que-parfait du subjonctif."
+    },
+    {
+      "id": "como-si-011",
+      "type": "transformation",
+      "prompt": "Transforme la phrase avec \"como si\" : \"Parece experto en IA, pero no sabe nada.\"",
+      "answer": "Parece como si fuera experto en IA, pero no sabe nada.",
+      "hint": "Exprime une apparence trompeuse."
+    },
+    {
+      "id": "como-si-012",
+      "type": "transformation",
+      "prompt": "Transforme la phrase avec \"como si\" : \"Se comporta de manera falsa, aunque sonríe.\"",
+      "answer": "Se comporta como si estuviera contento, aunque sonríe.",
+      "hint": "Utilise l'imparfait du subjonctif."
+    },
+    {
+      "id": "como-si-013",
+      "type": "transformation",
+      "prompt": "Transforme la phrase avec \"como si\" : \"No había visto la propaganda, pero reaccionó enseguida.\"",
+      "answer": "Reaccionó como si hubiera visto la propaganda antes.",
+      "hint": "Idée de passé imaginaire."
+    },
+    {
+      "id": "como-si-014",
+      "type": "transformation",
+      "prompt": "Transforme la phrase avec \"como si\" : \"El cartel parecía antiguo, aunque era nuevo.\"",
+      "answer": "El cartel parecía como si fuera antiguo, aunque era nuevo.",
+      "hint": "Comparaison irréelle au présent."
+    },
+    {
+      "id": "como-si-015",
+      "type": "transformation",
+      "prompt": "Transforme la phrase avec \"como si\" : \"Nunca había perdido un debate, pero sonó inseguro.\"",
+      "answer": "Sonó como si hubiera perdido un debate.",
+      "hint": "Passé irréel."
+    },
+    {
+      "id": "como-si-016",
+      "type": "transformation",
+      "prompt": "Transforme la phrase avec \"como si\" : \"Criticaba la sociedad, pero hablaba con superioridad.\"",
+      "answer": "Hablaba como si la sociedad no valiera nada.",
+      "hint": "Contexte social, comparaison fictive."
+    },
+    {
+      "id": "como-si-017",
+      "type": "transformation",
+      "prompt": "Transforme la phrase avec \"como si\" : \"El candidato no conocía el barrio, pero fingió lo contrario.\"",
+      "answer": "Fingió como si hubiera conocido el barrio.",
+      "hint": "Utilise le plus-que-parfait du subjonctif."
+    },
+    {
+      "id": "como-si-018",
+      "type": "transformation",
+      "prompt": "Transforme la phrase avec \"como si\" : \"Mira la imagen con ojos sorprendidos, aunque ya la vio.\"",
+      "answer": "Mira la imagen como si no la hubiera visto nunca.",
+      "hint": "Passé imaginaire lié à l'image."
+    },
+    {
+      "id": "como-si-019",
+      "type": "traducción",
+      "prompt": "Traduis en espagnol : Il parle comme si la vérité n'existait pas.",
+      "answer": "Habla como si la verdad no existiera.",
+      "hint": "Présent imaginaire."
+    },
+    {
+      "id": "como-si-020",
+      "type": "traducción",
+      "prompt": "Traduis en espagnol : Ils regardaient l'affiche comme si elle cachait un message secret.",
+      "answer": "Miraban el cartel como si ocultara un mensaje secreto.",
+      "hint": "Imparfait du subjonctif."
+    },
+    {
+      "id": "como-si-021",
+      "type": "traducción",
+      "prompt": "Traduis en espagnol : Le journaliste a parlé comme s'il avait vu la manipulation.",
+      "answer": "El periodista habló como si hubiera visto la manipulación.",
+      "hint": "Passé irréel."
+    },
+    {
+      "id": "como-si-022",
+      "type": "traducción",
+      "prompt": "Traduis en espagnol : Elle agit comme si tout était normal.",
+      "answer": "Actúa como si todo fuera normal.",
+      "hint": "Situation présente hypothétique."
+    },
+    {
+      "id": "como-si-023",
+      "type": "traducción",
+      "prompt": "Traduis en espagnol : On nous parlait comme si nous n'avions pas de voix.",
+      "answer": "Nos hablaban como si no tuviéramos voz.",
+      "hint": "Imparfait du subjonctif."
+    },
+    {
+      "id": "como-si-024",
+      "type": "traducción",
+      "prompt": "Traduis en espagnol : Le robot répondait comme s'il avait compris nos émotions.",
+      "answer": "El robot respondía como si hubiera entendido nuestras emociones.",
+      "hint": "Passé irréel avec IA."
+    },
+    {
+      "id": "como-si-025",
+      "type": "traducción",
+      "prompt": "Traduis en espagnol : La foule applaudissait comme si le leader avait sauvé le pays.",
+      "answer": "La multitud aplaudía como si el líder hubiera salvado el país.",
+      "hint": "Plus-que-parfait du subjonctif."
+    },
+    {
+      "id": "como-si-026",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme : Habla como si ______ la solución perfecta. a) tuviera b) tuvo c) tenga",
+      "answer": "a) tuviera",
+      "hint": "Imparfait du subjonctif."
+    },
+    {
+      "id": "como-si-027",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme : Lo contó como si ______ allí. a) estaba b) hubiera estado c) estaría",
+      "answer": "b) hubiera estado",
+      "hint": "Passé irréel."
+    },
+    {
+      "id": "como-si-028",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme : La imagen parecía como si ______ propaganda. a) fuera b) fue c) será",
+      "answer": "a) fuera",
+      "hint": "Comparaison irréelle."
+    },
+    {
+      "id": "como-si-029",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme : Nos trató como si no ______ derechos. a) teníamos b) tuviéramos c) tuvimos",
+      "answer": "b) tuviéramos",
+      "hint": "Imparfait du subjonctif."
+    },
+    {
+      "id": "como-si-030",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme : La IA habló como si ______ nuestra historia. a) conocía b) conociera c) hubiera conocido",
+      "answer": "b) conociera",
+      "hint": "Présent imaginaire."
+    },
+    {
+      "id": "como-si-031",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme : Se disculpó como si no ______ nada malo. a) hiciera b) hubiera hecho c) hace",
+      "answer": "b) hubiera hecho",
+      "hint": "Passé irréel."
+    },
+    {
+      "id": "como-si-032",
+      "type": "conjugaison",
+      "prompt": "Conjugue le verbe entre parenthèses : La propaganda sonaba como si (prometer) ______ el paraíso.",
+      "answer": "prometiera",
+      "hint": "Imparfait du subjonctif."
+    },
+    {
+      "id": "como-si-033",
+      "type": "conjugaison",
+      "prompt": "Conjugue le verbe entre parenthèses : Habló como si ya (resolver) ______ el problema social.",
+      "answer": "hubiera resuelto",
+      "hint": "Plus-que-parfait du subjonctif."
+    },
+    {
+      "id": "como-si-034",
+      "type": "transformation",
+      "prompt": "Transforme la phrase avec \"como si\" : \"El profesor sospecha de la foto, pero no tiene pruebas.\"",
+      "answer": "El profesor mira la foto como si escondiera algo.",
+      "hint": "Présent imaginaire lié à l'image."
+    },
+    {
+      "id": "como-si-035",
+      "type": "transformation",
+      "prompt": "Transforme la phrase avec \"como si\" : \"No había leído el manifiesto, pero habló con seguridad.\"",
+      "answer": "Habló como si hubiera leído el manifiesto.",
+      "hint": "Passé irréel."
+    }
+  ]
+}

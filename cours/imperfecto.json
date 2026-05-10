@@ -1,0 +1,48 @@
+{
+  "topicId": "imperfecto",
+  "title": "Imparfait de l'indicatif",
+  "use": "L'imparfait de l'indicatif sert à décrire une habitude dans le passé, une situation ou un décor, un état durable, une action en cours dans le passé, ou encore deux actions simultanées. En français, on peut souvent le traduire par l'imparfait : « je regardais », « nous allions », « il faisait ».",
+  "formation": [
+    "On part du radical du verbe à l'infinitif.",
+    "Pour les verbes réguliers en -ar, on ajoute les terminaisons : -aba, -abas, -aba, -ábamos, -abais, -aban.",
+    "Pour les verbes réguliers en -er et en -ir, on ajoute les terminaisons : -ía, -ías, -ía, -íamos, -íais, -ían.",
+    "L'imparfait est très régulier : il y a peu d'irrégularités à apprendre.",
+    "Le verbe à la 1re personne du pluriel sert souvent de point de départ pour retrouver le radical de certains verbes irréguliers."
+  ],
+  "endings": [
+    {
+      "group": "-ar",
+      "forms": ["-aba", "-abas", "-aba", "-ábamos", "-abais", "-aban"]
+    },
+    {
+      "group": "-er",
+      "forms": ["-ía", "-ías", "-ía", "-íamos", "-íais", "-ían"]
+    },
+    {
+      "group": "-ir",
+      "forms": ["-ía", "-ías", "-ía", "-íamos", "-íais", "-ían"]
+    }
+  ],
+  "irregulars": [
+    {
+      "pattern": "Verbes irréguliers fréquents",
+      "verbs": ["ser: era, eras, era, éramos, erais, eran", "ir: iba, ibas, iba, íbamos, ibais, iban", "ver: veía, veías, veía, veíamos, veíais, veían"],
+      "example": "Cuando era pequeño, iba al parque y veía a mis amigos todos los días."
+    }
+  ],
+  "tips": [
+    "Ne confonds pas l'imparfait avec le passé composé ou le passé simple : l'imparfait insiste sur la durée, l'habitude ou le décor.",
+    "Les terminaisons de l'imparfait sont presque toujours faciles à reconnaître : elles reviennent de manière très régulière.",
+    "Pense à l'imparfait pour raconter ce qu'il y avait, ce que quelqu'un faisait, et dans quel cadre l'action se passait.",
+    "Les verbes ser, ir et ver sont à apprendre par cœur car leurs formes ne suivent pas le modèle régulier.",
+    "À l'écrit comme à l'oral, l'imparfait sert beaucoup dans les descriptions et les récits au niveau lycée."
+  ],
+  "miniExamples": [
+    "De niño, jugaba al fútbol en el patio.",
+    "La ciudad era tranquila y había mucha gente en la plaza.",
+    "Nosotros estudiábamos mientras llovía.",
+    "Ella siempre llegaba temprano a clase.",
+    "Antes, veía dibujos animados por la mañana.",
+    "Mis abuelos vivían cerca del mar."
+  ]
+}

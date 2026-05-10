@@ -1,0 +1,266 @@
+{
+  "id": "obligation",
+  "title": "Obligation, conseil, nécessité",
+  "rule": "Exprimer l'obligation, le conseil et la nécessité en contexte espagnol de lycée : tener que, deber, hay que, es necesario que + subjonctif, es importante que + subjonctif, aconsejar que + subjonctif. Thèmes : famille, eau, langues, IA, réseaux sociaux.",
+  "examples": [
+    {
+      "es": "Hay que respetar el agua.",
+      "fr": "Il faut respecter l'eau."
+    },
+    {
+      "es": "Es necesario que la familia participe.",
+      "fr": "Il est nécessaire que la famille participe."
+    },
+    {
+      "es": "Te aconsejo que hables más despacio.",
+      "fr": "Je te conseille de parler plus lentement."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "obligation-001",
+      "type": "completion",
+      "prompt": "Complète : En casa, los hijos __________ ayudar a sus padres.",
+      "answer": "tienen que",
+      "hint": "Conjugue tener que à la 3e personne du pluriel."
+    },
+    {
+      "id": "obligation-002",
+      "type": "completion",
+      "prompt": "Complète : Para ahorrar agua, __________ cerrar bien el grifo.",
+      "answer": "hay que",
+      "hint": "Expression impersonnelle de nécessité générale."
+    },
+    {
+      "id": "obligation-003",
+      "type": "completion",
+      "prompt": "Complète : Mis padres dicen que yo __________ estudiar más.",
+      "answer": "debo",
+      "hint": "Emploie deber au présent."
+    },
+    {
+      "id": "obligation-004",
+      "type": "completion",
+      "prompt": "Complète : __________ que la familia dialogue para resolver los conflictos.",
+      "answer": "Es importante",
+      "hint": "Puis ajoute le subjonctif dans la phrase complète."
+    },
+    {
+      "id": "obligation-005",
+      "type": "transformation",
+      "prompt": "Transforme en conseil avec aconsejar que + subjonctif : Habla con tu hermana.",
+      "answer": "Te aconsejo que hables con tu hermana.",
+      "hint": "Garde le même sens mais ajoute un conseil."
+    },
+    {
+      "id": "obligation-006",
+      "type": "transformation",
+      "prompt": "Transforme en obligation personnelle : Es necesario estudiar francés para el examen.",
+      "answer": "Tengo que estudiar francés para el examen.",
+      "hint": "Passe de la nécessité générale à l'obligation personnelle."
+    },
+    {
+      "id": "obligation-007",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Il faut économiser l'eau.",
+      "answer": "Hay que ahorrar agua.",
+      "hint": "Phrase générale, sans sujet précis."
+    },
+    {
+      "id": "obligation-008",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Il est nécessaire que les adolescents limitent les réseaux sociaux.",
+      "answer": "Es necesario que los adolescentes limiten las redes sociales.",
+      "hint": "Utilise le subjonctif après es necesario que."
+    },
+    {
+      "id": "obligation-009",
+      "type": "choix",
+      "prompt": "Choisis la phrase correcte : A) Es importante que estudias. B) Es importante que estudies. C) Es importante que estudiaste.",
+      "answer": "B) Es importante que estudies.",
+      "hint": "Après es importante que, on utilise le subjonctif."
+    },
+    {
+      "id": "obligation-010",
+      "type": "completion",
+      "prompt": "Complète : En mi familia, mi hermano __________ cocinar los domingos.",
+      "answer": "tiene que",
+      "hint": "Sujet singulier."
+    },
+    {
+      "id": "obligation-011",
+      "type": "transformation",
+      "prompt": "Transforme en nécessité générale : Los alumnos usan la IA con responsabilidad.",
+      "answer": "Es necesario que los alumnos usen la IA con responsabilidad.",
+      "hint": "Emploie es necesario que + subjonctif."
+    },
+    {
+      "id": "obligation-012",
+      "type": "completion",
+      "prompt": "Complète : Para proteger la lengua familiar, __________ hablar en casa con naturalidad.",
+      "answer": "hay que",
+      "hint": "Consigne générale."
+    },
+    {
+      "id": "obligation-013",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Je te conseille de ne pas publier cette photo.",
+      "answer": "Te aconsejo que no publiques esta foto.",
+      "hint": "Conseil avec que + subjonctif."
+    },
+    {
+      "id": "obligation-014",
+      "type": "choix",
+      "prompt": "Choisis la bonne option : A) Debes que apagar el móvil. B) Debes apagar el móvil. C) Debe apagar el móvil que.",
+      "answer": "B) Debes apagar el móvil.",
+      "hint": "Deber ne se construit pas avec que ici."
+    },
+    {
+      "id": "obligation-015",
+      "type": "completion",
+      "prompt": "Complète : En clase de lenguas, nosotros __________ participar oralmente.",
+      "answer": "tenemos que",
+      "hint": "Sujet nosotros."
+    },
+    {
+      "id": "obligation-016",
+      "type": "transformation",
+      "prompt": "Transforme en conseil : No compartas tu contraseña en redes sociales.",
+      "answer": "Te aconsejo que no compartas tu contraseña en redes sociales.",
+      "hint": "Ajoute un conseil explicite."
+    },
+    {
+      "id": "obligation-017",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Il est important que les parents parlent avec leurs enfants.",
+      "answer": "Es importante que los padres hablen con sus hijos.",
+      "hint": "Verbe au subjonctif après la locution."
+    },
+    {
+      "id": "obligation-018",
+      "type": "completion",
+      "prompt": "Complète : Para cuidar el planeta, __________ ahorrar cada gota de agua.",
+      "answer": "hay que",
+      "hint": "Idée de règle générale."
+    },
+    {
+      "id": "obligation-019",
+      "type": "transformation",
+      "prompt": "Transforme en obligation avec deber : Llegar puntualmente a casa.",
+      "answer": "Debes llegar puntualmente a casa.",
+      "hint": "Fais une phrase complète au présent."
+    },
+    {
+      "id": "obligation-020",
+      "type": "choix",
+      "prompt": "Choisis la phrase correcte : A) Es necesario que la familia se apoye. B) Es necesario que la familia se apoya. C) Es necesario que la familia se apoyó.",
+      "answer": "A) Es necesario que la familia se apoye.",
+      "hint": "Après es necesario que, on emploie le subjonctif."
+    },
+    {
+      "id": "obligation-021",
+      "type": "completion",
+      "prompt": "Complète : Yo __________ usar menos el móvil por la noche.",
+      "answer": "debo",
+      "hint": "Conseil ou obligation personnelle."
+    },
+    {
+      "id": "obligation-022",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Il faut parler plusieurs langues à l'école.",
+      "answer": "Hay que hablar varias lenguas en la escuela.",
+      "hint": "Emploi impersonnel."
+    },
+    {
+      "id": "obligation-023",
+      "type": "transformation",
+      "prompt": "Transforme en nécessité : Los jóvenes mejoran su uso de la IA.",
+      "answer": "Es necesario que los jóvenes mejoren su uso de la IA.",
+      "hint": "Fais attention au subjonctif."
+    },
+    {
+      "id": "obligation-024",
+      "type": "completion",
+      "prompt": "Complète : En mi casa, mis abuelos __________ descansar después de comer.",
+      "answer": "tienen que",
+      "hint": "Sujet pluriel."
+    },
+    {
+      "id": "obligation-025",
+      "type": "choix",
+      "prompt": "Choisis la phrase correcte : A) Te aconsejo que estudies en silencio. B) Te aconsejo que estudias en silencio. C) Te aconsejo que estudiaste en silencio.",
+      "answer": "A) Te aconsejo que estudies en silencio.",
+      "hint": "Après aconsejar que, on utilise le subjonctif."
+    },
+    {
+      "id": "obligation-026",
+      "type": "transformation",
+      "prompt": "Transforme en obligation générale : Los usuarios respetan a los demás en Internet.",
+      "answer": "Hay que respetar a los demás en Internet.",
+      "hint": "Utilise la tournure impersonnelle."
+    },
+    {
+      "id": "obligation-027",
+      "type": "completion",
+      "prompt": "Complète : Para evitar discusiones familiares, __________ escuchar antes de responder.",
+      "answer": "es importante",
+      "hint": "Complète avec la locution demandée."
+    },
+    {
+      "id": "obligation-028",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Je vous conseille de faire attention aux fake news.",
+      "answer": "Les aconsejo que tengan cuidado con las noticias falsas.",
+      "hint": "Conseil au pluriel."
+    },
+    {
+      "id": "obligation-029",
+      "type": "choix",
+      "prompt": "Choisis la phrase correcte : A) Hay que que ahorrar agua. B) Hay que ahorrar agua. C) Hay que ahorra agua.",
+      "answer": "B) Hay que ahorrar agua.",
+      "hint": "Après hay que, on met l'infinitif."
+    },
+    {
+      "id": "obligation-030",
+      "type": "completion",
+      "prompt": "Complète : Mis amigos me dicen que yo __________ menos tiempo en TikTok.",
+      "answer": "debo pasar",
+      "hint": "Garde le sens de l'obligation personnelle."
+    },
+    {
+      "id": "obligation-031",
+      "type": "transformation",
+      "prompt": "Transforme en conseil : Usa la IA para revisar tu texto.",
+      "answer": "Te aconsejo que uses la IA para revisar tu texto.",
+      "hint": "Ajoute te aconsejo que."
+    },
+    {
+      "id": "obligation-032",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol : Il est important que les frères et sœurs s'entraident.",
+      "answer": "Es importante que los hermanos se ayuden.",
+      "hint": "Subjonctif après es importante que."
+    },
+    {
+      "id": "obligation-033",
+      "type": "completion",
+      "prompt": "Complète : En la familia, __________ repartir las tareas.",
+      "answer": "hay que",
+      "hint": "Expression générale et neutre."
+    },
+    {
+      "id": "obligation-034",
+      "type": "choix",
+      "prompt": "Choisis la phrase correcte : A) Es necesario que cierras el grifo. B) Es necesario que cierres el grifo. C) Es necesario que cerraste el grifo.",
+      "answer": "B) Es necesario que cierres el grifo.",
+      "hint": "Après es necesario que, on emploie le subjonctif."
+    },
+    {
+      "id": "obligation-035",
+      "type": "transformation",
+      "prompt": "Transforme en obligation personnelle : Hay que leer más en casa.",
+      "answer": "Tengo que leer más en casa.",
+      "hint": "Passe de hay que à tener que."
+    }
+  ]
+}

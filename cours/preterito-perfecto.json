@@ -1,0 +1,58 @@
+{
+  "topicId": "preterito-perfecto",
+  "title": "Pretérito perfecto",
+  "use": "Le pretérito perfecto sert à parler d'une action passée liée au présent : une expérience, un bilan, une action récente ou quelque chose qui compte encore maintenant. C'est un temps très utile à l'oral pour raconter ce qu'on a fait aujourd'hui, cette semaine ou cette année.",
+  "formation": [
+    "On construit le temps avec l'auxiliaire haber au présent + le participe passé du verbe principal.",
+    "Exemple de base : he + hablado, has + comido, ha + vivido.",
+    "Les participes réguliers se forment ainsi : -ar -> -ado, -er -> -ido, -ir -> -ido.",
+    "L'auxiliaire s'accorde avec le sujet : yo he, tú has, él/ella/usted ha, nosotros hemos, vosotros habéis, ellos/ellas/ustedes han.",
+    "À l'oral, on l'emploie souvent avec hoy, esta semana, este año, últimamente, ya, todavía no."
+  ],
+  "endings": [
+    {
+      "group": "haber",
+      "forms": ["he", "has", "ha", "hemos", "habéis", "han"]
+    }
+  ],
+  "irregulars": [
+    {
+      "pattern": "participes irréguliers en -cho, -to, -so",
+      "verbs": ["hacer: hecho", "ver: visto", "volver: vuelto", "poner: puesto", "escribir: escrito", "decir: dicho"],
+      "example": "Hoy he hecho los deberes y hemos visto un vídeo en clase."
+    },
+    {
+      "pattern": "participes irréguliers fréquents",
+      "verbs": ["abrir: abierto", "romper: roto", "morir: muerto", "resolver: resuelto", "descubrir: descubierto"],
+      "example": "Mi hermano ha abierto la ventana y ha roto un vaso."
+    }
+  ],
+  "tips": [
+    "Ne confonds pas pretérito perfecto et pretérito indefinido : le parfait garde un lien avec le présent.",
+    "Pour l'oral, pense à des repères de temps comme hoy, esta mañana, esta semana, este mes, este año.",
+    "Retiens bien les participes irréguliers les plus utiles : hecho, visto, dicho, puesto, escrito, abierto, roto, muerto.",
+    "Après haber, le participe ne change jamais : on ne dit pas 'he hablada' ni 'han vistos'."
+  ],
+  "miniExamples": [
+    {
+      "espanol": "Hoy he estudiado para el examen.",
+      "francais": "Aujourd'hui, j'ai étudié pour le contrôle."
+    },
+    {
+      "espanol": "Esta semana hemos hablado de las redes sociales.",
+      "francais": "Cette semaine, nous avons parlé des réseaux sociaux."
+    },
+    {
+      "espanol": "¿Has visto la noticia?",
+      "francais": "As-tu vu la nouvelle ?"
+    },
+    {
+      "espanol": "Ellos ya han terminado el trabajo.",
+      "francais": "Ils ont déjà terminé le travail."
+    },
+    {
+      "espanol": "Todavía no he comido.",
+      "francais": "Je n'ai pas encore mangé."
+    }
+  ]
+}

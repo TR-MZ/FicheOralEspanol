@@ -1,0 +1,293 @@
+{
+  "id": "hypothese",
+  "title": "Hypothèse et irréel",
+  "rule": "Exprimer l'hypothèse ou l'irréel en espagnol avec si + imparfait du subjonctif + conditionnel. On peut aussi employer des structures comme de + infinitif ou de no haber + participe pour formuler des regrets, des hypothèses passées ou des conséquences imaginaires.",
+  "examples": [
+    "Si hubiera más agua, las familias vivirían con menos tensión.",
+    "Si yo fuera político, protegería la memoria histórica.",
+    "De estudiar más, aprobarías el examen con facilidad.",
+    "De no haber llovido, la tribu habría tenido que marcharse."
+  ],
+  "exercises": [
+    {
+      "id": "hypothese-001",
+      "type": "conjugaison",
+      "prompt": "Complète: Si yo ______ (ser) político, cambiaría la ley de familia.",
+      "answer": "fuera",
+      "hint": "Imparfait du subjonctif de ser."
+    },
+    {
+      "id": "hypothese-002",
+      "type": "conjugaison",
+      "prompt": "Complète: Si las tribus ______ (tener) más agua, no emigrarían.",
+      "answer": "tuvieran",
+      "hint": "Imparfait du subjonctif de tener."
+    },
+    {
+      "id": "hypothese-003",
+      "type": "conjugaison",
+      "prompt": "Complète: Si mi familia ______ (vivir) cerca del río, estaría más tranquila.",
+      "answer": "viviera",
+      "hint": "Imparfait du subjonctif de vivir."
+    },
+    {
+      "id": "hypothese-004",
+      "type": "conjugaison",
+      "prompt": "Complète: Si el clima ______ (ser) más estable, habría menos conflictos.",
+      "answer": "fuera",
+      "hint": "Attention: ser -> fuera."
+    },
+    {
+      "id": "hypothese-005",
+      "type": "conjugaison",
+      "prompt": "Complète: Si nosotros ______ (poder) recordar mejor, cuidaríamos la memoria histórica.",
+      "answer": "pudiéramos",
+      "hint": "Imparfait du subjonctif de poder."
+    },
+    {
+      "id": "hypothese-006",
+      "type": "conjugaison",
+      "prompt": "Complète: Si tú ______ (hacer) un esfuerzo, ayudarías más a tu familia.",
+      "answer": "hicieras",
+      "hint": "Imparfait du subjonctif de hacer."
+    },
+    {
+      "id": "hypothese-007",
+      "type": "transformation",
+      "prompt": "Transforme en hypothèse: 'No tengo agua, así que no puedo regar la huerta.'",
+      "answer": "Si tuviera agua, podría regar la huerta.",
+      "hint": "Utilise si + imparfait du subjonctif + conditionnel."
+    },
+    {
+      "id": "hypothese-008",
+      "type": "transformation",
+      "prompt": "Transforme en hypothèse: 'No conocemos la historia, por eso olvidamos a las víctimas.'",
+      "answer": "Si conociéramos la historia, no olvidaríamos a las víctimas.",
+      "hint": "Garde le sens et inverse cause et conséquence."
+    },
+    {
+      "id": "hypothese-009",
+      "type": "transformation",
+      "prompt": "Transforme en hypothèse: 'No hay lluvia, entonces el campo sufre.'",
+      "answer": "Si hubiera lluvia, el campo no sufriría.",
+      "hint": "Forme courte et correcte."
+    },
+    {
+      "id": "hypothese-010",
+      "type": "transformation",
+      "prompt": "Transforme en hypothèse: 'No participo en política, por eso no cambio nada.'",
+      "answer": "Si participara en política, cambiaría algo.",
+      "hint": "Utilise un verbe de la vie civique."
+    },
+    {
+      "id": "hypothese-011",
+      "type": "transformation",
+      "prompt": "Transforme en hypothèse: 'No ayudamos a las familias, así que hay más problemas.'",
+      "answer": "Si ayudáramos a las familias, habría menos problemas.",
+      "hint": "Pense à habría."
+    },
+    {
+      "id": "hypothese-012",
+      "type": "transformation",
+      "prompt": "Transforme en hypothèse: 'No respetan las lenguas, por eso hay tensión.'",
+      "answer": "Si respetaran las lenguas, habría menos tensión.",
+      "hint": "Conserve le thème des langues cooficiales si tu veux."
+    },
+    {
+      "id": "hypothese-013",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Si j'étais membre de la tribu, j'écouterais les anciens.",
+      "answer": "Si yo fuera miembro de la tribu, escucharía a los mayores.",
+      "hint": "Membre de la tribu -> miembro de la tribu."
+    },
+    {
+      "id": "hypothese-014",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Si nous avions plus d'eau, nous vivrions mieux.",
+      "answer": "Si tuviéramos más agua, viviríamos mejor.",
+      "hint": "Phrase simple, sans ajouter d'éléments."
+    },
+    {
+      "id": "hypothese-015",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Si la famille était plus unie, il y aurait moins de disputes.",
+      "answer": "Si la familia estuviera más unida, habría menos discusiones.",
+      "hint": "Unida et discusiones."
+    },
+    {
+      "id": "hypothese-016",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Si le climat changeait moins vite, les récoltes seraient plus sûres.",
+      "answer": "Si el clima cambiara menos rápido, las cosechas serían más seguras.",
+      "hint": "Cosechas pour les récoltes."
+    },
+    {
+      "id": "hypothese-017",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Si j'étais responsable de la mémoire historique, je protégerais les archives.",
+      "answer": "Si yo fuera responsable de la memoria histórica, protegería los archivos.",
+      "hint": "Archive = archivos."
+    },
+    {
+      "id": "hypothese-018",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Si les politiques écoutaient les jeunes, ils prendraient de meilleures décisions.",
+      "answer": "Si los políticos escucharan a los jóvenes, tomarían mejores decisiones.",
+      "hint": "Choisis le pluriel naturel en espagnol."
+    },
+    {
+      "id": "hypothese-019",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: Si yo ___ más tiempo, leería sobre la historia de España. A) tuviera B) tuve C) tendré",
+      "answer": "A) tuviera",
+      "hint": "Après si, on emploie l'imparfait du subjonctif."
+    },
+    {
+      "id": "hypothese-020",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: Si no ___ llovido, la tribu habría perdido el cultivo. A) hubiera B) hubiera habido C) habíamos",
+      "answer": "A) hubiera",
+      "hint": "Structure de no haber + participe au passé."
+    },
+    {
+      "id": "hypothese-021",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: De ___ estudiado más, habría sacado mejor nota. A) haber B) haberme C) no haber",
+      "answer": "A) haber",
+      "hint": "Structure de + infinitif."
+    },
+    {
+      "id": "hypothese-022",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: De no ___ el río, el pueblo habría sufrido mucho. A) haber crecido B) crecer C) crecido",
+      "answer": "A) haber crecido",
+      "hint": "De no haber + participe fonctionne pour le passé."
+    },
+    {
+      "id": "hypothese-023",
+      "type": "conjugaison",
+      "prompt": "Complète: Si los políticos escucharan más, ______ (haber) menos conflictos.",
+      "answer": "habría",
+      "hint": "Accorde avec le sujet implicite: il y aurait."
+    },
+    {
+      "id": "hypothese-024",
+      "type": "conjugaison",
+      "prompt": "Complète: Si la memoria histórica se cuidara, no ______ (olvidar) a las víctimas.",
+      "answer": "olvidaríamos",
+      "hint": "Sujet sous-entendu: nous."
+    },
+    {
+      "id": "hypothese-025",
+      "type": "conjugaison",
+      "prompt": "Complète: Si yo ______ (deber) explicar el pasado, hablaría con sinceridad.",
+      "answer": "debiera",
+      "hint": "Imparfait du subjonctif de deber."
+    },
+    {
+      "id": "hypothese-026",
+      "type": "transformation",
+      "prompt": "Transforme en hypothèse: 'No hubo memoria, así que se repitieron los errores.'",
+      "answer": "Si hubiera habido memoria, no se habrían repetido los errores.",
+      "hint": "Ici, pense à habia -> hubiera habido."
+    },
+    {
+      "id": "hypothese-027",
+      "type": "transformation",
+      "prompt": "Transforme en hypothèse: 'No estudian el tema de las tribus, por eso no entienden el pasado.'",
+      "answer": "Si estudiaran el tema de las tribus, entenderían el pasado.",
+      "hint": "Présent de vérité générale à réécrire en hypothèse."
+    },
+    {
+      "id": "hypothese-028",
+      "type": "transformation",
+      "prompt": "Transforme en hypothèse: 'No hay diálogo entre generaciones, así que la familia se rompe.'",
+      "answer": "Si hubiera diálogo entre generaciones, la familia no se rompería.",
+      "hint": "Générations = generaciones."
+    },
+    {
+      "id": "hypothese-029",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Si tu n'avais pas oublié le passé, tu agirais autrement.",
+      "answer": "Si no hubieras olvidado el pasado, actuarías de otra manera.",
+      "hint": "Pour un passé irréel: plus-que-parfait du subjonctif."
+    },
+    {
+      "id": "hypothese-030",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: De ne pas avoir protégé l'eau, la région aurait été plus pauvre.",
+      "answer": "De no haber protegido el agua, la región habría sido más pobre.",
+      "hint": "Commence par De no haber + participe."
+    },
+    {
+      "id": "hypothese-031",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: De parler avec tes grands-parents, tu comprendrais mieux la mémoire familiale.",
+      "answer": "De hablar con tus abuelos, comprenderías mejor la memoria familiar.",
+      "hint": "Structure de + infinitif."
+    },
+    {
+      "id": "hypothese-032",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: Si nosotros ___ más unidos, resolveríamos el problema. A) fueramos B) fuéramos C) somos",
+      "answer": "B) fuéramos",
+      "hint": "Accentuation importante: fuéramos."
+    },
+    {
+      "id": "hypothese-033",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: Si ella ___ la verdad, ayudaría a la familia. A) supiera B) sabe C) sabrá",
+      "answer": "A) supiera",
+      "hint": "Imparfait du subjonctif de saber."
+    },
+    {
+      "id": "hypothese-034",
+      "type": "conjugaison",
+      "prompt": "Complète: Si la tribu ______ (defender) mejor sus derechos, viviría con más dignidad.",
+      "answer": "defendiera",
+      "hint": "Verbe régulier en -er/-ir."
+    },
+    {
+      "id": "hypothese-035",
+      "type": "conjugaison",
+      "prompt": "Complète: Si no ______ (haber) tanta contaminación, el clima sería menos extremo.",
+      "answer": "hubiera",
+      "hint": "Ici, il faut l'existence de quelque chose: hubiera."
+    },
+    {
+      "id": "hypothese-036",
+      "type": "transformation",
+      "prompt": "Transforme en hypothèse: 'No protegimos los ríos, así que perdimos agua.'",
+      "answer": "De haber protegido los ríos, no habríamos perdido agua.",
+      "hint": "Commence par De haber + participe."
+    },
+    {
+      "id": "hypothese-037",
+      "type": "transformation",
+      "prompt": "Transforme en hypothèse: 'No hubo acuerdo político, por eso hubo tensión social.'",
+      "answer": "Si hubiera habido acuerdo político, no habría habido tensión social.",
+      "hint": "Tu peux répéter habría habido."
+    },
+    {
+      "id": "hypothese-038",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Si la famille soutenait davantage les adolescents, ils seraient plus confiants.",
+      "answer": "Si la familia apoyara más a los adolescentes, ellos serían más seguros de sí mismos.",
+      "hint": "Adolescents = adolescentes."
+    },
+    {
+      "id": "hypothese-039",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Si le souvenir de la guerre restait vivant, nous éviterions les mêmes erreurs.",
+      "answer": "Si el recuerdo de la guerra siguiera vivo, evitaríamos los mismos errores.",
+      "hint": "Souviens-toi du verbe seguir."
+    },
+    {
+      "id": "hypothese-040",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: De no ___ memoria, la sociedad repetiría sus fallos. A) tener B) tenerse C) tenido",
+      "answer": "A) tener",
+      "hint": "Structure de no haber / de no + infinitif selon le sens."
+    }
+  ]
+}

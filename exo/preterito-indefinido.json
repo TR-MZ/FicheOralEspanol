@@ -1,0 +1,24 @@
+{
+  "id": "preterito-indefinido",
+  "title": "Pretérito indefinido",
+  "rule": "Le pretérito indefinido sert à raconter une action passée terminée et datée: en 2016, ayer, el año pasado, durante la dictadura.",
+  "examples": [
+    "En 2016 ocurrió el caso de Pamplona.",
+    "Franco utilizó el NO-DO como propaganda.",
+    "La ley cambió el debate público."
+  ],
+  "exercises": [
+    { "id": "indefinido-001", "type": "conjugaison", "prompt": "Conjugue à l'indefinido : En 2016 _____ (ocurrir) un caso importante.", "answer": "En 2016 ocurrió un caso importante.", "hint": "él/ella en -ir : -ió." },
+    { "id": "indefinido-002", "type": "conjugaison", "prompt": "Conjugue : Franco _____ (utilizar) el NO-DO.", "answer": "Franco utilizó el NO-DO.", "hint": "utilizar -> utilizó." },
+    { "id": "indefinido-003", "type": "conjugaison", "prompt": "Conjugue : Los ciudadanos _____ (salir) a la calle.", "answer": "Los ciudadanos salieron a la calle.", "hint": "ellos en -ir : -ieron." },
+    { "id": "indefinido-004", "type": "conjugaison", "prompt": "Conjugue : Nosotros _____ (ver) una serie histórica.", "answer": "Nosotros vimos una serie histórica.", "hint": "ver : vi, viste, vio, vimos..." },
+    { "id": "indefinido-005", "type": "conjugaison", "prompt": "Conjugue : El gobierno _____ (aprobar) una ley.", "answer": "El gobierno aprobó una ley.", "hint": "Verbe en -ar." },
+    { "id": "indefinido-006", "type": "conjugaison", "prompt": "Conjugue : Yo _____ (hacer) una presentación oral.", "answer": "Yo hice una presentación oral.", "hint": "hacer : hice." },
+    { "id": "indefinido-007", "type": "conjugaison", "prompt": "Conjugue : La caricatura _____ (representar) a Pedro Sánchez.", "answer": "La caricatura representó a Pedro Sánchez.", "hint": "Action passée terminée." },
+    { "id": "indefinido-008", "type": "traduction", "prompt": "Traduis : En 2022, l'Espagne a créé une nouvelle loi.", "answer": "En 2022, España creó una nueva ley.", "hint": "Date précise -> indefinido." },
+    { "id": "indefinido-009", "type": "conjugaison", "prompt": "Conjugue : Ellos _____ (pedir) justicia.", "answer": "Ellos pidieron justicia.", "hint": "pedir : e -> i à la 3e personne." },
+    { "id": "indefinido-010", "type": "conjugaison", "prompt": "Conjugue : La clase _____ (debatir) sobre la IA.", "answer": "La clase debatió sobre la IA.", "hint": "él/ella en -ir : -ió." },
+    { "id": "indefinido-011", "type": "choix", "prompt": "Choisis : Ayer (hemos estudiado / estudiamos) los carteles.", "answer": "Ayer estudiamos los carteles.", "hint": "Ayer = passé daté terminé." },
+    { "id": "indefinido-012", "type": "conjugaison", "prompt": "Conjugue : Los políticos _____ (usar) imágenes para convencer.", "answer": "Los políticos usaron imágenes para convencer.", "hint": "ellos en -ar : -aron." }
+  ]
+}

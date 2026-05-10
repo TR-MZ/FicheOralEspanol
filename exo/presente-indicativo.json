@@ -1,0 +1,24 @@
+{
+  "id": "presente-indicativo",
+  "title": "Présent de l'indicatif",
+  "rule": "Le présent de l'indicatif sert à présenter un document, décrire une réalité générale, donner une opinion ou expliquer une situation actuelle.",
+  "examples": [
+    "España tiene varias lenguas cooficiales.",
+    "El documento muestra una caricatura política.",
+    "Los jóvenes usan mucho las redes sociales."
+  ],
+  "exercises": [
+    { "id": "presente-001", "type": "conjugaison", "prompt": "Conjugue au présent : España _____ (tener) varias lenguas cooficiales.", "answer": "España tiene varias lenguas cooficiales.", "hint": "tener : tengo, tienes, tiene..." },
+    { "id": "presente-002", "type": "conjugaison", "prompt": "Conjugue au présent : Los alumnos _____ (aprender) vocabulario.", "answer": "Los alumnos aprenden vocabulario.", "hint": "Verbe régulier en -er." },
+    { "id": "presente-003", "type": "conjugaison", "prompt": "Conjugue au présent : Yo _____ (pensar) que la imagen manipula.", "answer": "Yo pienso que la imagen manipula.", "hint": "pensar : e -> ie." },
+    { "id": "presente-004", "type": "conjugaison", "prompt": "Conjugue au présent : Nosotros _____ (vivir) en una sociedad digital.", "answer": "Nosotros vivimos en una sociedad digital.", "hint": "Verbe régulier en -ir." },
+    { "id": "presente-005", "type": "conjugaison", "prompt": "Conjugue au présent : El cartel _____ (influir) en los votantes.", "answer": "El cartel influye en los votantes.", "hint": "influir : y à certaines personnes." },
+    { "id": "presente-006", "type": "conjugaison", "prompt": "Conjugue au présent : Tú _____ (defender) el plurilingüismo.", "answer": "Tú defiendes el plurilingüismo.", "hint": "defender : e -> ie." },
+    { "id": "presente-007", "type": "conjugaison", "prompt": "Conjugue au présent : La ley _____ (proteger) a las familias.", "answer": "La ley protege a las familias.", "hint": "Verbe régulier en -er." },
+    { "id": "presente-008", "type": "conjugaison", "prompt": "Conjugue au présent : Ellos _____ (pedir) más justicia.", "answer": "Ellos piden más justicia.", "hint": "pedir : e -> i." },
+    { "id": "presente-009", "type": "traduction", "prompt": "Traduis : Le document parle du changement climatique.", "answer": "El documento habla del cambio climático.", "hint": "hablar de = parler de." },
+    { "id": "presente-010", "type": "transformation", "prompt": "Mets au présent : El gobierno (querer) limitar las redes sociales.", "answer": "El gobierno quiere limitar las redes sociales.", "hint": "querer : e -> ie." },
+    { "id": "presente-011", "type": "conjugaison", "prompt": "Conjugue au présent : La ficción _____ (permitir) denunciar problemas reales.", "answer": "La ficción permite denunciar problemas reales.", "hint": "Verbe régulier en -ir." },
+    { "id": "presente-012", "type": "conjugaison", "prompt": "Conjugue au présent : Yo _____ (ver) una diferencia entre ficción y realidad.", "answer": "Yo veo una diferencia entre ficción y realidad.", "hint": "ver est court mais régulier au présent sauf yo : veo." }
+  ]
+}

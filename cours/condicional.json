@@ -1,0 +1,50 @@
+{
+  "topicId": "condicional",
+  "title": "Conditionnel",
+  "use": "Le conditionnel espagnol sert à exprimer une action soumise à une condition, une demande polie, une hypothèse, un conseil ou une information rapportée avec prudence. Il est très utile pour parler avec nuance et pour formuler des phrases plus courtoises.",
+  "formation": [
+    "On part de l'infinitif du verbe et on ajoute les terminaisons du conditionnel, sans enlever la terminaison -ar, -er ou -ir.",
+    "Les terminaisons sont les mêmes pour tous les verbes réguliers.",
+    "Pour les verbes irréguliers, on garde le radical irrégulier du futur simple et on ajoute les mêmes terminaisons que pour les verbes réguliers.",
+    "Le conditionnel se construit donc de façon très régulière après l'infinitif, ce qui facilite la mémorisation.",
+    "Il s'emploie souvent avec une idée de condition exprimée ailleurs dans la phrase : « Si tuviera tiempo, viajaría más »."
+  ],
+  "endings": [
+    {
+      "group": "tous les verbes",
+      "forms": ["-ía", "-ías", "-ía", "-íamos", "-íais", "-ían"]
+    }
+  ],
+  "irregulars": [
+    {
+      "pattern": "radicaux irréguliers",
+      "verbs": [
+        "tener: tendr-",
+        "poder: podr-",
+        "hacer: har-",
+        "decir: dir-",
+        "poner: pondr-",
+        "salir: saldr-",
+        "venir: vendr-",
+        "querer: querr-",
+        "saber: sabr-"
+      ],
+      "example": "Tendría más tiempo, podría ayudarte y diría la verdad."
+    }
+  ],
+  "tips": [
+    "Retiens une idée simple : l'infinitif reste intact, puis on ajoute les terminaisons du conditionnel.",
+    "Les radicaux irréguliers sont les mêmes que dans le futur simple, donc tu peux apprendre les deux temps ensemble.",
+    "Le conditionnel sert souvent à adoucir une demande : « ¿Podrías ayudarme? » est plus poli que « ¿Puedes ayudarme? ».",
+    "Avec « si », le conditionnel apparaît souvent dans la proposition principale : « Si estudiaras, aprobarías ».",
+    "Ne confonds pas le conditionnel avec le futur : le futur parle surtout de ce qui va arriver, alors que le conditionnel évoque une hypothèse, un souhait ou une politesse."
+  ],
+  "miniExamples": [
+    "Yo viajaría a España si tuviera dinero.",
+    "¿Podrías repetir la pregunta, por favor?",
+    "Ella haría los deberes antes de cenar.",
+    "Nosotros saldríamos más tarde si no lloviera.",
+    "Tú dirías la verdad en esa situación.",
+    "Creo que sabrían la respuesta si estudiaran más."
+  ]
+}

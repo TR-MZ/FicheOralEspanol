@@ -1,0 +1,313 @@
+{
+  "id": "subjonctif",
+  "title": "Subjonctif present",
+  "rule": "On emploie le subjonctif présent après un conseil, une nécessité, une importance, une interdiction, une permission ou une demande. Les structures fréquentes sont : aconsejar que, recomendar que, es necesario que, es importante que, prohibir que, permitir que, pedir que, exigir que.",
+  "examples": [
+    {
+      "fr": "Es importante que estudies las lenguas cooficiales.",
+      "es": "Il est important que tu étudies les langues coofficielles."
+    },
+    {
+      "fr": "Te aconsejo que hables con tu familia.",
+      "es": "Je te conseille de parler avec ta famille."
+    },
+    {
+      "fr": "Prohiben que los menores usen la red social por la noche.",
+      "es": "Ils interdisent que les mineurs utilisent le réseau social la nuit."
+    },
+    {
+      "fr": "Permiten que la clase use la IA para corregir textos.",
+      "es": "Ils permettent que la classe utilise l'IA pour corriger des textes."
+    },
+    {
+      "fr": "Piden que el Gobierno proteja mejor el clima.",
+      "es": "Ils demandent que le gouvernement protège mieux le climat."
+    },
+    {
+      "fr": "Es necesario que haya más diálogo.",
+      "es": "Il est nécessaire qu'il y ait plus de dialogue."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "subjonctif-001",
+      "type": "conjugaison",
+      "prompt": "Complète: Es importante que nosotros _____ (estudiar) las lenguas cooficiales.",
+      "answer": "estudiemos",
+      "hint": "Subjonctif présent de estudiar à la 1re personne du pluriel."
+    },
+    {
+      "id": "subjonctif-002",
+      "type": "conjugaison",
+      "prompt": "Complète: Te aconsejo que tú _____ (hablar) con tu madre.",
+      "answer": "hables",
+      "hint": "Après aconsejar que, on utilise le subjonctif."
+    },
+    {
+      "id": "subjonctif-003",
+      "type": "conjugaison",
+      "prompt": "Complète: Es necesario que ellos _____ (hacer) la tarea hoy.",
+      "answer": "hagan",
+      "hint": "Verbe irrégulier faire."
+    },
+    {
+      "id": "subjonctif-004",
+      "type": "conjugaison",
+      "prompt": "Complète: Recomiendo que tú _____ (leer) las normas de uso de la red social.",
+      "answer": "leas",
+      "hint": "Attention au sujet: tú -> lides non, ici la bonne forme demandée est au subjonctif présent."
+    },
+    {
+      "id": "subjonctif-005",
+      "type": "conjugaison",
+      "prompt": "Complète: Es urgente que vosotros _____ (venir) a clase de ciudadanía.",
+      "answer": "vengáis",
+      "hint": "Verbe venir au subjonctif présent, vosotros."
+    },
+    {
+      "id": "subjonctif-006",
+      "type": "conjugaison",
+      "prompt": "Complète: El profesor exige que yo _____ (escribir) un texto sobre el clima.",
+      "answer": "escriba",
+      "hint": "Exigir que impose le subjonctif."
+    },
+    {
+      "id": "subjonctif-007",
+      "type": "conjugaison",
+      "prompt": "Complète: Es mejor que tú no _____ (usar) el móvil durante la clase.",
+      "answer": "uses",
+      "hint": "Expression de conseil."
+    },
+    {
+      "id": "subjonctif-008",
+      "type": "conjugaison",
+      "prompt": "Complète: Prohibimos que los alumnos _____ (copiar) en los exámenes.",
+      "answer": "copien",
+      "hint": "La forme espagnole attendue est 'copien' en subjonctif présent."
+    },
+    {
+      "id": "subjonctif-009",
+      "type": "conjugaison",
+      "prompt": "Complète: Permitimos que la clase _____ (trabajar) en parejas.",
+      "answer": "trabaje",
+      "hint": "Permission + subjonctif."
+    },
+    {
+      "id": "subjonctif-010",
+      "type": "conjugaison",
+      "prompt": "Complète: Hace falta que tú _____ (ser) más responsable con las redes sociales.",
+      "answer": "seas",
+      "hint": "Hace falta que exprime la nécessité."
+    },
+    {
+      "id": "subjonctif-011",
+      "type": "transformation",
+      "prompt": "Transforme en utilisant le subjonctif: 'Estudia más.' -> consejo à un camarade.",
+      "answer": "Te aconsejo que estudies más.",
+      "hint": "Ajoute un verbe de conseil + que + subjonctif."
+    },
+    {
+      "id": "subjonctif-012",
+      "type": "transformation",
+      "prompt": "Transforme en utilisant le subjonctif: 'No uses la IA sin pensar.' -> interdiction.",
+      "answer": "Prohibo que uses la IA sin pensar.",
+      "hint": "Prohibir que déclenche le subjonctif."
+    },
+    {
+      "id": "subjonctif-013",
+      "type": "transformation",
+      "prompt": "Transforme en utilisant le subjonctif: 'Hay más diálogo entre padres e hijos.' -> nécessité.",
+      "answer": "Es necesario que haya más diálogo entre padres e hijos.",
+      "hint": "Es necesario que + subjonctif."
+    },
+    {
+      "id": "subjonctif-014",
+      "type": "transformation",
+      "prompt": "Transforme en utilisant le subjonctif: 'La clase participa en el debate.' -> importance.",
+      "answer": "Es importante que la clase participe en el debate.",
+      "hint": "Es importante que + subjonctif."
+    },
+    {
+      "id": "subjonctif-015",
+      "type": "transformation",
+      "prompt": "Transforme en utilisant le subjonctif: 'Los alumnos entregan el trabajo hoy.' -> demande du professeur.",
+      "answer": "El profesor pide que los alumnos entreguen el trabajo hoy.",
+      "hint": "Pedir que + subjonctif."
+    },
+    {
+      "id": "subjonctif-016",
+      "type": "transformation",
+      "prompt": "Transforme en utilisant le subjonctif: 'Tu hermano baja el tono.' -> demande.",
+      "answer": "Te ruego que tu hermano baje el tono.",
+      "hint": "Rogar que exprime une demande polie."
+    },
+    {
+      "id": "subjonctif-017",
+      "type": "transformation",
+      "prompt": "Transforme en utilisant le subjonctif: 'Usáis mejor el tiempo.' -> conseil.",
+      "answer": "Os aconsejo que uséis mejor el tiempo.",
+      "hint": "Conseil à vosotros."
+    },
+    {
+      "id": "subjonctif-018",
+      "type": "transformation",
+      "prompt": "Transforme en utilisant le subjonctif: 'La familia se organiza mejor.' -> importance.",
+      "answer": "Es fundamental que la familia se organice mejor.",
+      "hint": "Es fundamental que + subjonctif."
+    },
+    {
+      "id": "subjonctif-019",
+      "type": "transformation",
+      "prompt": "Transforme en utilisant le subjonctif: 'Los móviles permanecen apagados.' -> interdiction.",
+      "answer": "Prohibimos que los móviles permanezcan apagados.",
+      "hint": "Après prohibir, le verbe reste au subjonctif."
+    },
+    {
+      "id": "subjonctif-020",
+      "type": "transformation",
+      "prompt": "Transforme en utilisant le subjonctif: 'Los alumnos llegan a tiempo.' -> demande du centre.",
+      "answer": "El centro exige que los alumnos lleguen a tiempo.",
+      "hint": "Exigir que + subjonctif."
+    },
+    {
+      "id": "subjonctif-021",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Il est important que tu respectes ta famille.",
+      "answer": "Es importante que respetes a tu familia.",
+      "hint": "Important + que + subjonctif."
+    },
+    {
+      "id": "subjonctif-022",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Je conseille que vous lisiez ce document sur le climat.",
+      "answer": "Aconsejo que leáis este documento sobre el clima.",
+      "hint": "Conseiller + subjonctif."
+    },
+    {
+      "id": "subjonctif-023",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Il faut que les jeunes parlent moins sur les réseaux sociaux.",
+      "answer": "Hace falta que los jóvenes hablen menos en las redes sociales.",
+      "hint": "Faire falloir = hace falta que."
+    },
+    {
+      "id": "subjonctif-024",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Le professeur demande que nous corrigions nos erreurs.",
+      "answer": "El profesor pide que corrijamos nuestros errores.",
+      "hint": "Pedir que + subjonctif."
+    },
+    {
+      "id": "subjonctif-025",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Ils interdisent que les élèves utilisent le portable.",
+      "answer": "Prohíben que los alumnos usen el móvil.",
+      "hint": "Interdiction + subjonctif."
+    },
+    {
+      "id": "subjonctif-026",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: On permet que la classe travaille en groupe.",
+      "answer": "Se permite que la clase trabaje en grupo.",
+      "hint": "Permission + subjonctif."
+    },
+    {
+      "id": "subjonctif-027",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Il est nécessaire que le gouvernement protège le climat.",
+      "answer": "Es necesario que el gobierno proteja el clima.",
+      "hint": "Nécessité + subjonctif."
+    },
+    {
+      "id": "subjonctif-028",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Je recommande que tu utilises l'IA avec prudence.",
+      "answer": "Recomiendo que uses la IA con prudencia.",
+      "hint": "Recomendar que + subjonctif."
+    },
+    {
+      "id": "subjonctif-029",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: La mère veut que son fils aide à la maison.",
+      "answer": "La madre quiere que su hijo ayude en casa.",
+      "hint": "Verbe de volonté + subjonctif."
+    },
+    {
+      "id": "subjonctif-030",
+      "type": "traduction",
+      "prompt": "Traduis en espagnol: Il est essentiel que la démocratie fonctionne bien.",
+      "answer": "Es esencial que la democracia funcione bien.",
+      "hint": "Essentiel + subjonctif."
+    },
+    {
+      "id": "subjonctif-031",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: Es importante que ellos ____ la clase. a) entienden b) entiendan c) entenderán",
+      "answer": "b",
+      "hint": "Après es importante que, on choisit le subjonctif."
+    },
+    {
+      "id": "subjonctif-032",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: Te aconsejo que ____ menos redes sociales. a) usas b) uses c) usarás",
+      "answer": "b",
+      "hint": "Consejo + que + subjonctif."
+    },
+    {
+      "id": "subjonctif-033",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: Es necesario que nosotros ____ más agua. a) ahorramos b) ahorremos c) ahorraremos",
+      "answer": "b",
+      "hint": "Nécessité + subjonctif."
+    },
+    {
+      "id": "subjonctif-034",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: Prohibimos que tú ____ el móvil en clase. a) usas b) uses c) usarás",
+      "answer": "b",
+      "hint": "Après prohibir, on emploie le subjonctif."
+    },
+    {
+      "id": "subjonctif-035",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: Permiten que la familia ____ su opinión. a) expresa b) exprese c) expresará",
+      "answer": "b",
+      "hint": "Permission + subjonctif."
+    },
+    {
+      "id": "subjonctif-036",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: El profesor pide que los alumnos ____ silencio. a) mantienen b) mantengan c) mantendrán",
+      "answer": "b",
+      "hint": "Pedir que + subjonctif."
+    },
+    {
+      "id": "subjonctif-037",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: Es fundamental que la IA ____ de forma ética. a) funciona b) funcione c) funcionará",
+      "answer": "b",
+      "hint": "Es fundamental que + subjonctif."
+    },
+    {
+      "id": "subjonctif-038",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: Recomiendo que vosotros ____ el documento. a) leéis b) leáis c) leeréis",
+      "answer": "b",
+      "hint": "Recomendar + subjonctif."
+    },
+    {
+      "id": "subjonctif-039",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: Hace falta que el Gobierno ____ medidas contra el cambio climático. a) toma b) tome c) tomará",
+      "answer": "b",
+      "hint": "Hace falta que + subjonctif."
+    },
+    {
+      "id": "subjonctif-040",
+      "type": "choix",
+      "prompt": "Choisis la bonne forme: Es mejor que tú no ____ en ese debate político. a) participas b) participes c) participarás",
+      "answer": "b",
+      "hint": "Conseil / prudence + subjonctif."
+    }
+  ]
+}

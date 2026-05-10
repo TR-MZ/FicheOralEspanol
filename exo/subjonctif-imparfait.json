@@ -1,0 +1,24 @@
+{
+  "id": "subjonctif-imparfait",
+  "title": "Imparfait du subjonctif",
+  "rule": "L'imparfait du subjonctif sert dans les hypothèses irréelles et après como si. Les formes en -ra et -se existent: hablara / hablase.",
+  "examples": [
+    "Si España cuidara más el agua, habría menos problemas.",
+    "Actúa como si fuera un experto.",
+    "Si los políticos escucharan, la sociedad confiaría más."
+  ],
+  "exercises": [
+    { "id": "subj-imp-001", "type": "conjugaison", "prompt": "Complète : Si España _____ (cuidar) más el agua, habría menos problemas.", "answer": "Si España cuidara más el agua, habría menos problemas.", "hint": "Si + imparfait du subjonctif." },
+    { "id": "subj-imp-002", "type": "conjugaison", "prompt": "Complète : Actúa como si _____ (ser) un experto.", "answer": "Actúa como si fuera un experto.", "hint": "ser -> fuera." },
+    { "id": "subj-imp-003", "type": "conjugaison", "prompt": "Complète : Si los jóvenes _____ (tener) límites, usarían mejor las redes.", "answer": "Si los jóvenes tuvieran límites, usarían mejor las redes.", "hint": "tener -> tuvieran." },
+    { "id": "subj-imp-004", "type": "conjugaison", "prompt": "Complète : Era como si la imagen _____ (mentir).", "answer": "Era como si la imagen mintiera.", "hint": "mentir -> mintiera." },
+    { "id": "subj-imp-005", "type": "conjugaison", "prompt": "Complète : Si nosotros _____ (saber) más, debatiríamos mejor.", "answer": "Si nosotros supiéramos más, debatiríamos mejor.", "hint": "saber -> supiera." },
+    { "id": "subj-imp-006", "type": "conjugaison", "prompt": "Complète : El candidato hablaba como si _____ (conocer) todos los problemas.", "answer": "El candidato hablaba como si conociera todos los problemas.", "hint": "conocer -> conociera." },
+    { "id": "subj-imp-007", "type": "traduction", "prompt": "Traduis : Si j'étais espagnol, je défendrais le plurilinguisme.", "answer": "Si fuera español, defendería el plurilingüismo.", "hint": "être dans une hypothèse irréelle = fuera." },
+    { "id": "subj-imp-008", "type": "conjugaison", "prompt": "Complète : Si la ley _____ (proteger) más, las víctimas hablarían.", "answer": "Si la ley protegiera más, las víctimas hablarían.", "hint": "proteger -> protegiera." },
+    { "id": "subj-imp-009", "type": "conjugaison", "prompt": "Complète : El cartel parece como si _____ (querer) emocionarnos.", "answer": "El cartel parece como si quisiera emocionarnos.", "hint": "querer -> quisiera." },
+    { "id": "subj-imp-010", "type": "choix", "prompt": "Choisis : Si el Estado (ayudara / ayuda) más, la natalidad subiría.", "answer": "Si el Estado ayudara más, la natalidad subiría.", "hint": "subiría appelle l'irréel." },
+    { "id": "subj-imp-011", "type": "conjugaison", "prompt": "Complète : Si tú _____ (leer) el texto, entenderías el mensaje.", "answer": "Si tú leyeras el texto, entenderías el mensaje.", "hint": "leer -> leyera." },
+    { "id": "subj-imp-012", "type": "transformation", "prompt": "Transforme : No escucha a nadie. -> Actúa como si...", "answer": "Actúa como si no escuchara a nadie.", "hint": "como si + imparfait du subjonctif." }
+  ]
+}

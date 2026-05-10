@@ -1,0 +1,24 @@
+{
+  "id": "imperativo",
+  "title": "Impératif",
+  "rule": "L'impératif sert à donner un ordre, un conseil direct ou une consigne. À la forme négative, on utilise le subjonctif.",
+  "examples": [
+    "Respeta las lenguas cooficiales.",
+    "No manipules las imágenes.",
+    "Cuidad el agua."
+  ],
+  "exercises": [
+    { "id": "imperativo-001", "type": "conjugaison", "prompt": "Mets à l'impératif tú : _____ (respetar) las lenguas cooficiales.", "answer": "Respeta las lenguas cooficiales.", "hint": "tú affirmatif : 3e personne du présent." },
+    { "id": "imperativo-002", "type": "conjugaison", "prompt": "Mets à l'impératif négatif tú : No _____ (manipular) las imágenes.", "answer": "No manipules las imágenes.", "hint": "négatif -> subjonctif." },
+    { "id": "imperativo-003", "type": "conjugaison", "prompt": "Mets à l'impératif vosotros : _____ (cuidar) el agua.", "answer": "Cuidad el agua.", "hint": "vosotros : -d." },
+    { "id": "imperativo-004", "type": "conjugaison", "prompt": "Mets à l'impératif usted : _____ (lea) el documento.", "answer": "Lea el documento.", "hint": "usted -> subjonctif." },
+    { "id": "imperativo-005", "type": "conjugaison", "prompt": "Mets à l'impératif tú : _____ (hacer) un resumen.", "answer": "Haz un resumen.", "hint": "hacer -> haz." },
+    { "id": "imperativo-006", "type": "conjugaison", "prompt": "Mets à l'impératif négatif vosotros : No _____ (usar) la IA para engañar.", "answer": "No uséis la IA para engañar.", "hint": "vosotros négatif -> subjonctif." },
+    { "id": "imperativo-007", "type": "traduction", "prompt": "Traduis : Ne copie pas le texte.", "answer": "No copies el texto.", "hint": "négatif tú -> subjonctif." },
+    { "id": "imperativo-008", "type": "conjugaison", "prompt": "Mets à l'impératif tú : _____ (decir) la verdad.", "answer": "Di la verdad.", "hint": "decir -> di." },
+    { "id": "imperativo-009", "type": "conjugaison", "prompt": "Mets à l'impératif ustedes : _____ (proteger) a los menores.", "answer": "Protejan a los menores.", "hint": "ustedes -> subjonctif." },
+    { "id": "imperativo-010", "type": "choix", "prompt": "Choisis : (No usa / No uses) las redes sin cuidado.", "answer": "No uses las redes sin cuidado.", "hint": "Ordre négatif à tú." },
+    { "id": "imperativo-011", "type": "conjugaison", "prompt": "Mets à l'impératif tú : _____ (poner) atención.", "answer": "Pon atención.", "hint": "poner -> pon." },
+    { "id": "imperativo-012", "type": "transformation", "prompt": "Transforme en conseil direct : Es necesario que escuches a los demás.", "answer": "Escucha a los demás.", "hint": "Conseil direct -> impératif." }
+  ]
+}
